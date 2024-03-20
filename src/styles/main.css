@@ -1,0 +1,51 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+   @apply p-0 m-0 box-border;
+}
+
+body {
+   @apply font-chillax text-base text-white font-light bg-gray-950;
+}
+
+html {
+   @apply scroll-smooth;
+}
+
+@layer components {
+   a {
+      @apply no-underline;
+   }
+
+   a:hover {
+      @apply underline underline-offset-2;
+   }
+
+   input,
+   select,
+   textarea,
+   button {
+      @apply focus:outline-none bg-transparent;
+   }
+
+   .text-linear {
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+   }
+
+   [role="button"],
+   button {
+      @apply select-none;
+   }
+}
+
+/* 
+ Mobile Responsiveness
+*/
+@media screen and (max-width: 1040px) {
+}
+@media screen and (max-width: 600px) {
+}
