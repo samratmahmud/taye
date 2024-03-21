@@ -3,7 +3,7 @@ import React from "react";
 
 function Header() {
    return (
-      <section className="bg-header bg-cover bg-no-repeat relative min-h-screen grid place-content-center mb-[106px]">
+      <section className="bg-header bg-cover bg-no-repeat relative min-h-screen grid place-content-center">
          <span
             className="absolute top-0 left-0 right-0 h-full"
             style={{

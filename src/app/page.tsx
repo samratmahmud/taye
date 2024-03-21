@@ -6,6 +6,7 @@ import OurOffer from "./home/OurOffer";
 import GiveMenu from "./home/GiveMenu";
 import Prenotation from "./home/Prenotation";
 import Contact from "./home/Contact";
+import Map from "./home/Map";
 
 function Homepage() {
    return (
@@ -17,6 +18,7 @@ function Homepage() {
          <GiveMenu />
          <Prenotation />
          <Contact />
+         <Map />
       </main>
    );
 }

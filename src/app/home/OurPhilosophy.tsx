@@ -51,7 +51,7 @@ function OurPhilosophy() {
 
    return (
       <section>
-         <div className="container mb-[200px]">
+         <div className="container mb-[200px] mt-[106px]">
             <Slider {...settings} className="max-w-[1210px] mx-auto px-0.5l">
                {philosophys.map(({title, describtion}, index) => (
                   <div key={index} className="my-1">

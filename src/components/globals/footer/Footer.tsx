@@ -81,7 +81,10 @@ function Footer() {
          <div className="container mb-11">
             <div className="grid grid-cols-5">
                <div className="max-w-[250px]">
-                  <Link href="/" className="text-5xl font-medium">
+                  <Link
+                     href="/"
+                     className="text-5xl font-medium hover:no-underline"
+                  >
                      tayè.
                   </Link>
                   <p className="text-lg font-extralight">
@@ -92,11 +95,17 @@ function Footer() {
                </div>
                {footerLink.map(({title, links, iconG}, index) => (
                   <div key={index} className="">
-                     <h2 className="text-lg font-semibold mb-2.5">{title}</h2>
+                     <h2 className="text-lg font-semibold leading-[1.23em] mb-2.5">
+                        {title}
+                     </h2>
                      {links && (
                         <div className="flex flex-col gap-2.5">
                            {links.map(({name, path}, index) => (
-                              <Link href={path} key={index}>
+                              <Link
+                                 href={path}
+                                 key={index}
+                                 className="leading-[1.3em]"
+                              >
                                  {name}
                               </Link>
                            ))}
@@ -110,7 +119,11 @@ function Footer() {
                                  key={index}
                                  className="px-1.5 py-1"
                               >
-                                 <img src={icon} alt="" />
+                                 <img
+                                    className="hover:opacity-80 duration-200"
+                                    src={icon}
+                                    alt=""
+                                 />
                               </Link>
                            ))}
                         </div>
@@ -120,7 +133,7 @@ function Footer() {
             </div>
          </div>
          <hr className="border border-primary-400 w-full" />
-         <div className="text-lg font-extralight text-center py-8">
+         <div className="text-lg font-extralight leading-[1.22em] text-center py-8">
             Copyright © 2024 tayè
          </div>
       </section>
