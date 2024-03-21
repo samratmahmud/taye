@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Button from "@/components/common/Button";
 import Titles from "@/components/common/Titles";
 import React from "react";
 
@@ -61,18 +62,18 @@ function GiveMenu() {
                               {title}
                            </h3>
                            <div className="flex flex-col gap-1 w-full">
-                              <hr className="border border-primary-600 w-full" />
-                              <hr className="border border-primary-600 w-full" />
+                              <hr className="border border-primary-400 w-full" />
+                              <hr className="border border-primary-400 w-full" />
                            </div>
                            <p className="text-xl font-medium leading-[1.42em] text-primary-400">
                               {price}
                            </p>
                         </div>
-                        <p className="max-w-[465px] leading-[1.41em] mb-1">
+                        <p className="max-w-[465px] leading-[1.41em]">
                            {describtion}
                         </p>
                         {iconG && (
-                           <div className="flex items-center gap-1.5">
+                           <div className="flex items-center gap-1.5 mt-1">
                               <span className="w-1.5 h-1.5 bg-white group-hover:bg-primary-400 duration-200 rounded-full" />
                               <div className="flex gap-1.5">
                                  {iconG.map((icon, index) => (
@@ -84,16 +85,12 @@ function GiveMenu() {
                      </div>
                   ))}
                </div>
-               <div
-                  role="button"
-                  className="flex gap-0.5 items-center justify-center group"
-               >
-                  <p className="text-md font-normal">Scopri</p>
-                  <div className="border border-primary-400 rounded-full p-1 group-hover:translate-x-2 duration-300">
-                     <div className="border border-primary-400 rounded-full p-[5px]">
-                        <img src="/images/Group 201.svg" alt="" />
-                     </div>
-                  </div>
+               <div className="flex justify-center">
+                  <Button
+                     title="Scopri"
+                     path="/"
+                     icon="/images/Group 201.svg"
+                  />
                </div>
             </div>
          </div>

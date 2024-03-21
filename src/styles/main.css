@@ -27,7 +27,7 @@ html {
    select,
    textarea,
    button {
-      @apply focus:outline-none bg-transparent;
+      @apply focus:outline-0 bg-transparent;
    }
 
    .text-linear {

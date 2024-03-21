@@ -30,7 +30,7 @@ function OurOffer() {
       <section>
          <div className="mb-44">
             <div className="mb-11">
-               <Titles title=" Le nostre offerte." />
+               <Titles title="Le nostre offerte." />
             </div>
             <div className="grid grid-cols-4">
                {offerName.map(({background, title, describtion}, index) => (

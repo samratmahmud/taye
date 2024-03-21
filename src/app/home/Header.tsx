@@ -11,11 +11,11 @@ function Header() {
                   "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0B1315 88%)",
             }}
          />
-         <div className="container pt-64 relative z-10 mb-[300px]">
-            <div className="text-9xl font-bitter-rose text-primary-400 text-center mb-10 leading-[1.05em]">
+         <div className="container pt-64 relative z-10 mb-[400px]">
+            <div className="text-9xl font-bitter-rose text-primary-400 text-center mb-1.5 leading-[1.05em]">
                L’arte del gusto a Torino
             </div>
-            <h1 className="text-10xl font-syncopate font-bold uppercase text-center leading-[0.81em]p mb-3">
+            <h1 className="text-10xl font-syncopate font-bold uppercase text-center leading-[0.81em] mb-3">
                tayè
             </h1>
             <p className="text-sm font-bold font-syncopate text-center leading-[1.08em]">

@@ -48,6 +48,7 @@ const config: Config = {
       shadows: {sm: "0px 4px 4px rgba(0, 0, 0, 0.25)"},
       backgroundImage: {
          header: "url('/images/sfondo nuovo.jpg')",
+         "Prenotation-bg": "url('/images/forme geometriche.png')",
       },
       container: {
          center: true,

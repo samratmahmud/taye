@@ -4,8 +4,10 @@ import OurPhilosophy from "./home/OurPhilosophy";
 import PersonDetails from "./home/PersonDetails";
 import OurOffer from "./home/OurOffer";
 import GiveMenu from "./home/GiveMenu";
+import Prenotation from "./home/Prenotation";
+import Contact from "./home/Contact";
 
-function page() {
+function Homepage() {
    return (
       <main>
          <Header />
@@ -13,8 +15,10 @@ function page() {
          <PersonDetails />
          <OurOffer />
          <GiveMenu />
+         <Prenotation />
+         <Contact />
       </main>
    );
 }
 
-export default page;
+export default Homepage;
