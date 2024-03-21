@@ -25,6 +25,16 @@ const BitterRoseDEMO = localFont({
 const ChillaxComplete = localFont({
    src: [
       {
+         path: "../assets/fonts/Chillax_Complete/Chillax-ExtraLight.otf",
+         weight: "200",
+         style: "normal",
+      },
+      {
+         path: "../assets/fonts/Chillax_Complete/Chillax-Light.otf",
+         weight: "300",
+         style: "normal",
+      },
+      {
          path: "../assets/fonts/Chillax_Complete/Chillax-Regular.otf",
          weight: "400",
          style: "normal",

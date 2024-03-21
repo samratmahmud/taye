@@ -41,7 +41,7 @@ function Navbar() {
                   <Link
                      href="/"
                      target="_blank"
-                     className="flex items-center gap-1.5 text-md font-medium leading-[1.3em] border hover:no-underline border-primary-400 py-[9px] px-4 rounded-full"
+                     className="flex items-center gap-1.5 text-md font-medium leading-[1.3em] border hover:no-underline border-primary-400 py-[9px] px-4 rounded-full hover:bg-gray-400/15 duration-200"
                   >
                      <p>Prenota</p>
                      <img

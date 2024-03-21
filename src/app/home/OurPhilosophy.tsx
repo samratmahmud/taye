@@ -62,7 +62,7 @@ function OurPhilosophy() {
                         </h2>
                         <img src="/images/forma sinistra.svg" alt="" />
                      </div>
-                     <p className="text-4xl leading-[1.4em] text-center font-thin">
+                     <p className="text-4xl leading-[1.4em] text-center">
                         {describtion}
                      </p>
                   </div>
