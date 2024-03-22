@@ -43,15 +43,15 @@ function MenuBar(props: MenuGroupProps) {
                className={`w-[50%] ${menuItemP ? "flex flex-col gap-20" : ""}`}
             >
                <div className="relative">
-                  <div className="absolute top-[48%] right-[22%]">
+                  <div className="mt-[120px] relative z-10">
                      <img className="" src={thambnail} alt="" />
                   </div>
-                  <div className="flex justify-end group-even:items-start -mt-12">
+                  <div className="absolute -top-[170px] right-0 z-0">
                      <img className="" src={thambnailI} alt="" />
                   </div>
                </div>
                {menuItemP && (
-                  <div className="flex flex-col gap-10 pt-[65%]">
+                  <div className="flex flex-col gap-10">
                      {menuItemP.map(
                         ({titles, price, describtion, iconG}, index) => (
                            <MenuItems

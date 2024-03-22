@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "../home/Header";
 import MenuGroups from "./menu_group";
-
-//Clip path group.svg 1/1
+import Register from "./Register";
 
 function Menupage() {
    return (
       <main>
          <Header />
          <MenuGroups />
+         <Register />
       </main>
    );
 }

@@ -19,7 +19,7 @@ function Button(props: ButtonProps) {
          <p className="text-md font-normal">{name}</p>
          <div className="border border-primary-400 rounded-full p-1 group-hover:translate-x-2 duration-300">
             <div className="border border-primary-400 rounded-full p-[5px]">
-               <img src={icon} alt="" />
+               <img className="w-[15px]" src={icon} alt="" />
             </div>
          </div>
       </Link>

@@ -17,7 +17,10 @@ function Prenotation() {
                <div className="grid grid-cols-3 gap-x-[38px] gap-y-6 mb-5">
                   <TextField type="text" placeholder="Nome*" />
                   <TextField type="text" placeholder="Email*" />
-                  <TextField type="text" placeholder="Telefono (consigliato)" />
+                  <TextField
+                     type="number"
+                     placeholder="Telefono (consigliato)"
+                  />
                   <TextField type="text" placeholder="2*" />
                   <TextField type="text" placeholder="2*" />
                   <TextField type="text" placeholder="2*" />

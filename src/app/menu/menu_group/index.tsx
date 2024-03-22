@@ -138,7 +138,7 @@ const menucards = [
    },
    {
       thambnail: "/images/tayèri.png",
-      thambnailI: "/images/forma cocktails.png",
+      thambnailI: "/images/forma wines.png",
       title: "Tayeri ‘",
       menuItem: [
          {
@@ -184,13 +184,57 @@ const menucards = [
          },
       ],
    },
+   {
+      thambnail: "/images/tayèri.png",
+      thambnailI: "/images/forma cocktails.png",
+      title: "Desserts",
+      menuItem: [
+         {
+            titles: "TIRAMISù CLASSICO",
+            price: "€8",
+            describtion:
+               "Selezione di salmone affumicato, gamberi, calamari, acciughe.",
+            iconG: [
+               "/images/Group 143.svg",
+               "/images/path402.svg",
+               "/images/Group 141.svg",
+               "/images/Group 140.svg",
+            ],
+         },
+         {
+            titles: "PANNA COTTA AI FRUTTI DI BOSCO",
+            price: "€9",
+            describtion:
+               "Selezione di salmone affumicato, gamberi, calamari, acciughe.",
+            iconG: ["/images/Group 143.svg", "/images/path402.svg"],
+         },
+         {
+            titles: "TORTA AL CIOCCOLATO FONDENTE",
+            price: "€10",
+            describtion:
+               "Selezione di salumi, formaggi locali, olive, e marmellata artigianale.",
+         },
+         {
+            titles: "MOUSSE AL LIMONE",
+            price: "€7",
+            describtion: "Assortimento di formaggi regionali, miele, noci.",
+         },
+      ],
+      action: [
+         {
+            name: "Legenda allergeni",
+            path: "/",
+            icon: "/images/Group 208.svg",
+         },
+      ],
+   },
 ];
 
 function MenuGroups() {
    return (
       <section>
          <div className="container mb-32">
-            <div className="max-w-[1085px] mx-auto flex flex-col gap-[70px] group">
+            <div className="max-w-[1085px] mx-auto flex flex-col gap-[70px]">
                {menucards.map(
                   (
                      {

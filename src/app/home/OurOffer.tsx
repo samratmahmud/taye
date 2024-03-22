@@ -4,7 +4,7 @@ import React from "react";
 
 const offerName = [
    {
-      background: "/images/cocktails.jpg",
+      background: "/images/cocktails (1).jpg",
       title: "Cocktails",
       describtion: "gusto in ogni goccia.",
    },
