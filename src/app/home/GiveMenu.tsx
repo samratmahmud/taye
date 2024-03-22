@@ -86,11 +86,7 @@ function GiveMenu() {
                   ))}
                </div>
                <div className="flex justify-center">
-                  <Button
-                     title="Scopri"
-                     path="/"
-                     icon="/images/Group 201.svg"
-                  />
+                  <Button name="Scopri" path="/" icon="/images/Group 201.svg" />
                </div>
             </div>
          </div>

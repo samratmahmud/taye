@@ -13,17 +13,25 @@ function MenuItems(props: MenuItemsProps) {
 
    return (
       <div className="group">
-         <div className="flex gap-2.5 items-center">
-            <h3 className="text-xl font-medium text-primary-400 leading-[1.42em] flex-shrink-0">
-               {titles}
-            </h3>
-            <div className="flex flex-col gap-1 w-full">
-               <hr className="border border-primary-400 w-full" />
-               <hr className="border border-primary-400 w-full" />
+         <div className="gap-2.5 items-end">
+            <h3
+               className="text-xl inline font-medium text-primary-400 leading-[1.42em] flex-shrink-0 relative z-10"
+               dangerouslySetInnerHTML={{
+                  __html: `<div style="background: #0B1315; display: inline;">${insertLineBreakAfterSlash(
+                     titles
+                  )}</div> `,
+               }}
+            />
+
+            <div className="flex gap-2.5 items-center -mt-[26px]">
+               <div className="flex flex-col gap-1 w-full opacity-50">
+                  <hr className="border border-primary-400 w-full" />
+                  <hr className="border border-primary-400 w-full" />
+               </div>
+               <p className="text-xl font-medium !leading-[1.42em] text-primary-400">
+                  {price}
+               </p>
             </div>
-            <p className="text-xl font-medium leading-[1.42em] text-primary-400">
-               {price}
-            </p>
          </div>
          <p className="max-w-[465px] leading-[1.41em]">{describtion}</p>
          {iconG && (
@@ -41,3 +49,8 @@ function MenuItems(props: MenuItemsProps) {
 }
 
 export default MenuItems;
+
+function insertLineBreakAfterSlash(str: string) {
+   // Use regular expression to find all occurrences of "/"
+   return str.replace(/\//g, " / <br />");
+}

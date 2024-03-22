@@ -33,7 +33,7 @@ function Prenotation() {
                </div>
                <div className="flex justify-center">
                   <Button
-                     title="Prenota"
+                     name="Prenota"
                      path="/"
                      icon="/images/Group 201.svg"
                   />
