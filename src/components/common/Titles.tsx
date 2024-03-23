@@ -15,9 +15,7 @@ function Titles(props: titlesProps) {
             src="/images/forma sinistra.svg"
             alt=""
          />
-         <h2 className="text-7xl font-medium leading-[1.4em] mb-1.5">
-            {title}
-         </h2>
+         <h2 className="text-7xl font-medium leading-[1.41em]">{title}</h2>
          <img
             className="lg:w-[30px] md:w-6 w-5"
             src="/images/forma sinistra.svg"

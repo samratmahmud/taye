@@ -77,25 +77,35 @@ const footerLink = [
 function Footer() {
    return (
       <footer className="bg-gray-800">
-         <div className="border-y border-primary-400 py-8">
+         <div className="border-y border-primary-400 pt-9 pb-11">
             <div className="container">
                <div className="grid lg:grid-cols-5 grid-cols-4 gap-x-6 md:gap-y-12 gap-y-6">
-                  <div className="max-w-[250px] col-span-4 sm:col-span-2 lg:col-span-1">
-                     <Link href="/" className="text-5xl font-medium hover:no-underline">
+                  <div className="sm:max-w-[250px] col-span-4 sm:col-span-2 lg:col-span-1">
+                     <div className="lg:text-5xl md:text-[36px] text-[31px] leading-[0.81em] md:leading-[1.4em] font-medium hover:no-underline">
                         tayè.
-                     </Link>
-                     <p className="text-lg font-extralight">
-                        Siamo aperti tutti i giorni della settimana dalle ore 18 alle 02. <br />{" "}
-                        Puoi trovarci in Corso Moncalieri, 19b, 10131 Torino TO
+                     </div>
+                     <p className="md:text-lg text-base leading-[1.41em] font-extralight">
+                        Siamo aperti tutti i giorni della settimana dalle ore 18
+                        alle 02. <br /> Puoi trovarci in Corso Moncalieri, 19b,
+                        10131 Torino TO
                      </p>
                   </div>
                   {footerLink.map(({title, links, iconG}, index) => (
-                     <div key={index} className="col-span-4 sm:col-span-2 lg:col-span-1">
-                        <h2 className="text-lg font-semibold leading-[1.23em] mb-2.5">{title}</h2>
+                     <div
+                        key={index}
+                        className="col-span-4 sm:col-span-2 lg:col-span-1"
+                     >
+                        <h2 className="text-lg font-semibold leading-[1.23em] mb-2.5">
+                           {title}
+                        </h2>
                         {links && (
-                           <div className="flex flex-col gap-2.5">
+                           <div className="flex flex-col gap-[11px]">
                               {links.map(({name, path}, index) => (
-                                 <Link href={path} key={index} className="leading-[1.3em]">
+                                 <Link
+                                    href={path}
+                                    key={index}
+                                    className="text-base md:leading-[1.3em] leading-[1.41em]"
+                                 >
                                     {name}
                                  </Link>
                               ))}
@@ -124,7 +134,7 @@ function Footer() {
                </div>
             </div>
          </div>
-         <div className="text-lg font-extralight leading-[1.22em] text-center py-8">
+         <div className="text-lg font-extralight leading-[1.32em] text-center md:py-8 py-7">
             Copyright © 2024 tayè
          </div>
       </footer>

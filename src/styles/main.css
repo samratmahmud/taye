@@ -64,6 +64,9 @@ input[type="number"]::-webkit-outer-spin-button {
    .text-sm {
       @apply text-[12px];
    }
+   .text-5xl {
+      @apply text-[36px];
+   }
    .text-7xl {
       @apply text-[48px];
    }
@@ -84,6 +87,9 @@ input[type="number"]::-webkit-outer-spin-button {
    .text-4xl {
       @apply text-[26px];
    }
+   .text-5xl {
+      @apply text-[28px];
+   }
    .text-7xl {
       @apply text-[40px];
    }
@@ -95,10 +101,16 @@ input[type="number"]::-webkit-outer-spin-button {
    }
 }
 @media screen and (max-width: 768px) {
+   .text-xl {
+      @apply text-[17px];
+   }
    .text-2xl {
       @apply text-[18px];
    }
    .text-4xl {
+      @apply text-[22px];
+   }
+   .text-5xl {
       @apply text-[22px];
    }
    .text-7xl {
@@ -123,6 +135,9 @@ input[type="number"]::-webkit-outer-spin-button {
    }
    .text-4xl {
       @apply text-[17px];
+   }
+   .text-5xl {
+      @apply text-[20px];
    }
    .text-7xl {
       @apply text-[24px];

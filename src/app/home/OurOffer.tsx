@@ -36,7 +36,7 @@ function OurOffer() {
                {offerName.map(({thumb, title, describtion}, index) => (
                   <div
                      key={index}
-                     className="lg:min-h-[670px] md:min-h-[400px] min-h-[134px] bg-cover bg-center relative z-0"
+                     className="lg:min-h-[670px] sm:min-h-[400px] min-h-[134px] bg-cover bg-center relative z-0"
                      style={{backgroundImage: `url('${thumb}')`}}
                   >
                      <span
@@ -45,12 +45,14 @@ function OurOffer() {
                            backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.68) 100%)`,
                         }}
                      />
-                     <div className="absolute px-5 w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-full">
-                        <div className="translate-y-[80px]">
+                     <div className="absolute xl:px-5 px-3 w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-full">
+                        <div className="sm:translate-y-[80px] translate-y-10">
                            <h2 className="text-12xl font-normal text-primary-400 font-bitter-rose text-center">
                               {title}
                            </h2>
-                           <p className="text-3xl">{describtion}</p>
+                           <p className="2xl:text-3xl sm:text-[25px] text-base">
+                              {describtion}
+                           </p>
                         </div>
                      </div>
                   </div>

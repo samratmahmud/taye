@@ -55,16 +55,16 @@ const opening = [
 function Contact() {
    return (
       <section>
-         <div className="container mb-[72px]">
+         <div className="sm:container lg:mb-[72px] md:mb-12 mb-9">
             <div className="max-w-[1266px] mx-auto">
                <h3 className="text-5xl leading-[1.05em] font-normal text-primary-400 font-bitter-rose text-center">
                   Vieni a trovarci!
                </h3>
-               <div className="mb-14">
+               <div className="lg:mb-14 md:mb-10 sm:mb-7 mb-5">
                   <Titles title="Contattaci." />
                </div>
-               <div className="flex gap-28 items-center">
-                  <div className="flex flex-col gap-5 w-[50%]">
+               <div className="flex lg:flex-row flex-col xl:gap-28 lg:gap-16 md:gap-10 gap-7 items-center">
+                  <div className="flex flex-col lg:gap-5 gap-3 lg:w-[50%] w-full px-4 sm:px-0">
                      {contactDetails.map(({title, describtion}, index) => (
                         <div key={index}>
                            <h2 className="text-4xl font-semibold leading-[1.4em] text-primary-400 text-center">
@@ -83,19 +83,19 @@ function Contact() {
                         </div>
                      ))}
                   </div>
-                  <div className="w-[50%] pt-10 pb-20 px-[74px]">
+                  <div className="lg:w-[50%] w-full bg-gray-800 rounded-xl lg:pt-10 md:pt-7 pt-5 lg:pb-20 md:pb-14 sm:pb-10 pb-8 px-[74px]">
                      {opening.map(({title, items}, index) => (
                         <div key={index}>
-                           <h2 className="text-4xl font-semibold  leading-[1.4em] text-primary-400 text-center mb-[50px]">
+                           <h2 className="text-4xl font-semibold  leading-[1.4em] text-primary-400 text-center lg:mb-[50px] md:mb-9 mb-6">
                               {title}
                            </h2>
                            <div>
                               {items.map(({name, value}, index) => (
                                  <div
                                     key={index}
-                                    className="flex justify-between"
+                                    className="flex justify-between gap-3"
                                  >
-                                    <h3 className="text-4xl font-light  leading-[1.4em]">
+                                    <h3 className="text-4xl font-light  leading-[1.4em] mb-[1px] md:mb-0">
                                        {name}
                                     </h3>
                                     <p className="font-normal text-4xl  leading-[1.4em]">
