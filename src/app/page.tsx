@@ -16,8 +16,8 @@ function Homepage() {
          <PersonDetails />
          <OurOffer />
          <GiveMenu />
-         <Prenotation />
-         <Contact />
+         {/* <Prenotation /> */}
+         {/* <Contact /> */}
          <Map />
       </main>
    );

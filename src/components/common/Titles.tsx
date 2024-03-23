@@ -10,11 +10,19 @@ function Titles(props: titlesProps) {
 
    return (
       <div className="flex items-center justify-center gap-5">
-         <img src="/images/forma sinistra.svg" alt="" />
+         <img
+            className="lg:w-[30px] md:w-6 w-5"
+            src="/images/forma sinistra.svg"
+            alt=""
+         />
          <h2 className="text-7xl font-medium leading-[1.4em] mb-1.5">
             {title}
          </h2>
-         <img src="/images/forma sinistra.svg" alt="" />
+         <img
+            className="lg:w-[30px] md:w-6 w-5"
+            src="/images/forma sinistra.svg"
+            alt=""
+         />
       </div>
    );
 }

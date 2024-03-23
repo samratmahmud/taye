@@ -38,18 +38,21 @@ function PersonDetails() {
 
    return (
       <section>
-         <div className="container mb-52">
+         <div className="container xl:mb-52 lg:mb-44 md:mb-36 sm:mb-32 mb-[104px]">
             <div className="flex gap-10 justify-between items-center">
-               <div>
+               <div className="hidden lg:block">
                   <img src="/images/Group 200.jpg" alt="" />
                </div>
-               <Slider {...settings} className="max-w-[515px]">
+               <Slider
+                  {...settings}
+                  className="sm:max-w-[515px] max-w-[315px] mx-auto"
+               >
                   {personInfo.map(({content, name, title}, index) => (
                      <div key={index} className="px-2.5">
-                        <div className="text-11xl text-primary-400 font-semibold leading-[0.95em] text-center mb-2.5">
+                        <div className="text-11xl text-primary-400 font-semibold leading-[0.95em] text-center md:mb-2.5">
                            ”
                         </div>
-                        <p className="text-4xl text-center leading-[1.4em] mb-10">
+                        <p className="text-4xl text-center leading-[1.4em] lg:mb-10 md:mb-8 mb-6">
                            {content}
                         </p>
                         <p className="text-2xl font-normal text-primary-400 text-center uppercase leading-[1.4em]">

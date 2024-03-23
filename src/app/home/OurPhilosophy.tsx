@@ -51,18 +51,29 @@ function OurPhilosophy() {
 
    return (
       <section>
-         <div className="container mb-[200px] mt-[106px]">
-            <Slider {...settings} className="max-w-[1210px] mx-auto px-0.5l">
+         <div className="container mb-[60px] sm:mb-20 md:mb-28 lg:mb-40 xl:mb-[200px] md:mt-[106px] mt-[100px]">
+            <Slider
+               {...settings}
+               className="lg:max-w-[1210px] sm:max-w-[990px] max-w-[322px] mx-auto"
+            >
                {philosophys.map(({title, describtion}, index) => (
                   <div key={index} className="my-1">
-                     <div className="flex items-center justify-center gap-5">
-                        <img src="/images/forma sinistra.svg" alt="" />
+                     <div className="flex items-center justify-center lg:gap-5 md:gap-3 gap-1.5">
+                        <img
+                           className="lg:w-[30px] md:w-6 w-5"
+                           src="/images/forma sinistra.svg"
+                           alt=""
+                        />
                         <h2 className="text-7xl font-medium leading-[1.4em] mb-1.5">
                            {title}
                         </h2>
-                        <img src="/images/forma sinistra.svg" alt="" />
+                        <img
+                           className="lg:w-[30px] md:w-6 w-5"
+                           src="/images/forma sinistra.svg"
+                           alt=""
+                        />
                      </div>
-                     <p className="text-4xl leading-[1.4em] text-center">
+                     <p className="text-4xl leading-[1.4em] text-center lg:px-0.5 md:px-1 px-2">
                         {describtion}
                      </p>
                   </div>

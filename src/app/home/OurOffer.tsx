@@ -28,15 +28,15 @@ const offerName = [
 function OurOffer() {
    return (
       <section>
-         <div className="mb-44">
+         <div className="xl:mb-44 lg:mb-36 md:mb-24 sm:mb-20 mb-11">
             <div className="mb-11">
                <Titles title="Le nostre offerte." />
             </div>
-            <div className="grid grid-cols-4">
+            <div className="grid xl:grid-cols-4 md:grid-cols-2">
                {offerName.map(({thumb, title, describtion}, index) => (
                   <div
                      key={index}
-                     className="min-h-[670px] bg-cover bg-center relative z-0"
+                     className="lg:min-h-[670px] md:min-h-[400px] min-h-[134px] bg-cover bg-center relative z-0"
                      style={{backgroundImage: `url('${thumb}')`}}
                   >
                      <span

@@ -2,7 +2,7 @@
 "use client";
 import useNavbarEffect from "@/hooks/useNavbarEffect";
 import Link from "next/link";
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 
 const navLink = [
    {
@@ -24,9 +24,11 @@ const navLink = [
 ];
 
 function Navbar() {
+   const [open, setOpen] = useState(false);
+
    const nav = useNavbarEffect(
       "py-7 bg-transparent",
-      "md:py-3 py-4 bg-black/30 backdrop-blur-[8px]"
+      "md:py-3 pt-4 pb-2 bg-black/30 backdrop-blur-[8px]"
    );
 
    const itemsWrapper = useNavbarEffect("py-3.5", "py-2.5");
@@ -47,7 +49,7 @@ function Navbar() {
                            <Link
                               href={path}
                               key={index}
-                              className="text-md font-medium"
+                              className="text-md font-medium hover:text-gray-600 duration-300 hover:no-underline"
                               target="_blank"
                            >
                               {title}
@@ -57,10 +59,20 @@ function Navbar() {
                      <Link
                         href="/"
                         target="_blank"
-                        className="flex items-center gap-1.5 text-md font-medium leading-[1.3em] border hover:no-underline border-primary-400 py-[9px] px-4 rounded-full hover:bg-gray-400/15 duration-200"
+                        onMouseEnter={() => setOpen(true)}
+                        onMouseLeave={() => setOpen(false)}
+                        className="flex items-center gap-1.5 text-md font-medium leading-[1.3em] border hover:no-underline border-primary-400 py-[9px] px-4 rounded-full hover:bg-primary-400 duration-300"
                      >
                         <p>Prenota</p>
-                        <img className="mt-1" src="/images/Group 197 (1).svg" alt="" />
+                        <img
+                           className="mt-0.5"
+                           src={`${
+                              open
+                                 ? "images/Group 210.svg"
+                                 : "/images/Group 197 (1).svg"
+                           }`}
+                           alt=""
+                        />
                      </Link>
                   </div>
                </div>

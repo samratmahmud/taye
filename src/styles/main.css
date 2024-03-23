@@ -7,7 +7,7 @@
 }
 
 body {
-   @apply font-chillax text-base text-white font-light bg-gray-950;
+   @apply font-chillax md:text-base text-[15px] text-white font-light bg-gray-950;
 }
 
 html {
@@ -51,7 +51,89 @@ input[type="number"]::-webkit-outer-spin-button {
 /* 
  Mobile Responsiveness
 */
-@media screen and (max-width: 1040px) {
+
+@media screen and (max-width: 1512px) {
+   .text-9xl {
+      @apply text-[70px];
+   }
+   .text-10xl {
+      @apply text-[87px];
+   }
+}
+@media screen and (max-width: 1280px) {
+   .text-sm {
+      @apply text-[12px];
+   }
+   .text-7xl {
+      @apply text-[48px];
+   }
+   .text-9xl {
+      @apply text-[66px];
+   }
+   .text-10xl {
+      @apply text-[81px];
+   }
+}
+@media screen and (max-width: 1024px) {
+   .text-sm {
+      @apply text-[10px];
+   }
+   .text-2xl {
+      @apply text-[20px];
+   }
+   .text-4xl {
+      @apply text-[26px];
+   }
+   .text-7xl {
+      @apply text-[40px];
+   }
+   .text-9xl {
+      @apply text-[56px];
+   }
+   .text-10xl {
+      @apply text-[70px];
+   }
+}
+@media screen and (max-width: 768px) {
+   .text-2xl {
+      @apply text-[18px];
+   }
+   .text-4xl {
+      @apply text-[22px];
+   }
+   .text-7xl {
+      @apply text-[30px];
+   }
+   .text-9xl {
+      @apply text-[48px];
+   }
+   .text-10xl {
+      @apply text-[60px];
+   }
 }
 @media screen and (max-width: 600px) {
+   .text-sm {
+      @apply text-[8px];
+   }
+   .text-2xl {
+      @apply text-[17px];
+   }
+   .text-3xl {
+      @apply text-[17px];
+   }
+   .text-4xl {
+      @apply text-[17px];
+   }
+   .text-7xl {
+      @apply text-[24px];
+   }
+   .text-9xl {
+      @apply text-[46px];
+   }
+   .text-10xl {
+      @apply text-[54px];
+   }
+   .text-12xl {
+      @apply text-[80px];
+   }
 }

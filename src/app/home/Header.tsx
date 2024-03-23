@@ -9,7 +9,7 @@ function Header(props: titlesProps) {
    const {title} = props;
 
    return (
-      <section className="md:bg-headerW bg-headerM bg-cover bg-no-repeat relative min-h-screen grid place-content-center">
+      <section className="md:bg-headerW bg-headerM bg-cover bg-center relative min-h-screen grid place-content-center">
          <span
             className="hidden md:block absolute top-0 left-0 right-0 h-full"
             style={{
@@ -28,7 +28,7 @@ function Header(props: titlesProps) {
             <div className="text-9xl font-bitter-rose text-primary-400 text-center mb-1.5 leading-[1.05em]">
                {title}
             </div>
-            <h1 className="text-10xl font-syncopate font-bold uppercase text-center leading-[0.81em] mb-3">
+            <h1 className="text-10xl font-syncopate font-bold uppercase text-center leading-[0.81em] md:mb-3 mb-2">
                tayè
             </h1>
             <p className="text-sm font-bold font-syncopate text-center leading-[1.08em]">
