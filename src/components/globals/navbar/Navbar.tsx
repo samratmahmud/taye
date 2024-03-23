@@ -39,16 +39,18 @@ function Navbar() {
    return (
       <nav
          className={`fixed left-0 right-0 z-[1080] duration-300 ${
-            visible ? "py-3" : "py-7"
+            visible
+               ? "md:py-3 py-4 bg-black/30 backdrop-blur-[8px]"
+               : "py-7 bg-transparent"
          }`}
       >
          <div className="container">
-            <div className="flex items-center justify-between">
+            <div className="flex md:items-center justify-between">
                <Link href="/">
                   <img src="/images/logo in alto sx.svg" alt="" />
                </Link>
                <div
-                  className={`border-2 border-primary-400 rounded-full duration-300 ${
+                  className={`hidden md:block border-2 border-primary-400 rounded-full duration-300 ${
                      !visible ? "py-3.5" : "py-2.5"
                   } pl-9 pr-4 bg-gray-950/60 max-w-[535px] mx-auto`}
                >
@@ -78,6 +80,9 @@ function Navbar() {
                         />
                      </Link>
                   </div>
+               </div>
+               <div className="md:hidden cursor-pointer pl-2">
+                  <img src="/images/Group 209.svg" alt="" />
                </div>
             </div>
          </div>

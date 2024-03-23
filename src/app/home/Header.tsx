@@ -1,19 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 
-function Header() {
+interface titlesProps {
+   title: string;
+}
+
+function Header(props: titlesProps) {
+   const {title} = props;
+
    return (
-      <section className="bg-header bg-cover bg-no-repeat relative min-h-screen grid place-content-center">
+      <section className="md:bg-headerW bg-headerM bg-cover bg-no-repeat relative min-h-screen grid place-content-center">
          <span
-            className="absolute top-0 left-0 right-0 h-full"
+            className="hidden md:block absolute top-0 left-0 right-0 h-full"
             style={{
                backgroundImage:
                   "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0B1315 88%)",
             }}
          />
-         <div className="container pt-64 relative z-10 mb-[400px]">
+         <span
+            className="md:hidden absolute top-0 left-0 right-0 h-full"
+            style={{
+               backgroundImage:
+                  " linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0B1315 94%)",
+            }}
+         />
+         <div className="container relative z-10 md:pt-64 md:pb-[400px] py-80">
             <div className="text-9xl font-bitter-rose text-primary-400 text-center mb-1.5 leading-[1.05em]">
-               L’arte del gusto a Torino
+               {title}
             </div>
             <h1 className="text-10xl font-syncopate font-bold uppercase text-center leading-[0.81em] mb-3">
                tayè

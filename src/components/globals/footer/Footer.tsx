@@ -79,8 +79,8 @@ function Footer() {
       <section className="bg-gray-800">
          <hr className="border border-primary-400 w-full mb-8" />
          <div className="container mb-11">
-            <div className="grid grid-cols-5">
-               <div className="max-w-[250px]">
+            <div className="grid lg:grid-cols-5 grid-cols-4 gap-x-6 md:gap-y-12 gap-y-6">
+               <div className="max-w-[250px] col-span-4 sm:col-span-2 lg:col-span-1">
                   <Link
                      href="/"
                      className="text-5xl font-medium hover:no-underline"
@@ -94,7 +94,10 @@ function Footer() {
                   </p>
                </div>
                {footerLink.map(({title, links, iconG}, index) => (
-                  <div key={index} className="">
+                  <div
+                     key={index}
+                     className="col-span-4 sm:col-span-2 lg:col-span-1"
+                  >
                      <h2 className="text-lg font-semibold leading-[1.23em] mb-2.5">
                         {title}
                      </h2>

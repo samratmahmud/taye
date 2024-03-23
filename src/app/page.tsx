@@ -11,13 +11,13 @@ import Map from "./home/Map";
 function Homepage() {
    return (
       <main>
-         <Header />
-         <OurPhilosophy />
+         <Header title="L’arte del gusto a Torino" />
+         {/* <OurPhilosophy />
          <PersonDetails />
          <OurOffer />
          <GiveMenu />
          <Prenotation />
-         <Contact />
+         <Contact /> */}
          <Map />
       </main>
    );
