@@ -17,10 +17,7 @@ function Prenotation() {
                <div className="grid grid-cols-3 gap-x-[38px] gap-y-6 mb-5">
                   <TextField type="text" placeholder="Nome*" />
                   <TextField type="text" placeholder="Email*" />
-                  <TextField
-                     type="number"
-                     placeholder="Telefono (consigliato)"
-                  />
+                  <TextField type="number" placeholder="Telefono (consigliato)" />
                   <TextField type="text" placeholder="2*" />
                   <TextField type="text" placeholder="2*" />
                   <TextField type="text" placeholder="2*" />
@@ -29,21 +26,13 @@ function Prenotation() {
                   Ti verrà inviata una conferma della sua prenotazione
                </p>
                <div className="flex items-center gap-4 justify-center mb-14">
-                  <input
-                     className="w-4 h-4 cursor-pointer"
-                     type="checkbox"
-                     id="checkbox"
-                  />
-                  <p className="font-normal leading-[1.42em]">
-                     Iscriviti alla newsletter
-                  </p>
+                  <input className="w-4 h-4 cursor-pointer" type="checkbox" id="checkbox" />
+                  <p className="font-normal leading-[1.42em]">Iscriviti alla newsletter</p>
                </div>
                <div className="flex justify-center">
-                  <Button
-                     name="Prenota"
-                     path="/"
-                     icon="/images/Group 201.svg"
-                  />
+                  <Button path="/" icon="/images/Group 201.svg">
+                     Prenota
+                  </Button>
                </div>
             </div>
          </div>

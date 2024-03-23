@@ -19,10 +19,7 @@ function Register() {
                   <div className="flex flex-col gap-[18px] max-w-[330px] mx-auto mb-7">
                      <TextField type="text" placeholder="nome*" />
                      <TextField type="email" placeholder="Email*" />
-                     <TextField
-                        type="number"
-                        placeholder="Telefono (consigliato)"
-                     />
+                     <TextField type="number" placeholder="Telefono (consigliato)" />
                   </div>
                   <div className="flex items-center justify-center gap-2.5 mb-6">
                      <input className="w-4 h-4" type="checkbox" />
@@ -32,11 +29,9 @@ function Register() {
                      </div>
                   </div>
                   <div>
-                     <Button
-                        name="Iscriviti"
-                        path="/"
-                        icon="/images/Group 201.svg"
-                     />
+                     <Button path="/" icon="/images/Group 201.svg">
+                        Iscriviti
+                     </Button>
                   </div>
                </div>
                <div className="relative">
@@ -52,8 +47,7 @@ function Register() {
                      <span
                         className="absolute top-0 left-0 right-0 h-full opacity-60"
                         style={{
-                           backgroundImage:
-                              "linear-gradient(#000000 50%, #000000 50%)",
+                           backgroundImage: "linear-gradient(#000000 50%, #000000 50%)",
                         }}
                      />
                      <img src="/images/cocktails.jpg" alt="" />

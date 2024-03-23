@@ -7,8 +7,7 @@ const menus = [
    {
       title: "TAYÈRE DEL CONTADINO",
       price: "€18",
-      describtion:
-         "Selezione di salumi, formaggi locali, olive, e marmellata artigianale.",
+      describtion: "Selezione di salumi, formaggi locali, olive, e marmellata artigianale.",
       iconG: [
          "/images/Group 143.svg",
          "/images/path402.svg",
@@ -19,15 +18,13 @@ const menus = [
    {
       title: "TAYÈRE DEL MARE",
       price: "€26",
-      describtion:
-         "Selezione di salmone affumicato, gamberi, calamari, acciughe.",
+      describtion: "Selezione di salmone affumicato, gamberi, calamari, acciughe.",
       iconG: ["/images/Group 143.svg"],
    },
    {
       title: "TAYÈRE MEDITERRANEO",
       price: "€22",
-      describtion:
-         "Prosciutto crudo, mozzarella di bufala, pomodorini, olive, pesto.",
+      describtion: "Prosciutto crudo, mozzarella di bufala, pomodorini, olive, pesto.",
    },
    {
       title: "TAYÈRE VEGANO",
@@ -69,9 +66,7 @@ function GiveMenu() {
                               {price}
                            </p>
                         </div>
-                        <p className="max-w-[465px] leading-[1.41em]">
-                           {describtion}
-                        </p>
+                        <p className="max-w-[465px] leading-[1.41em]">{describtion}</p>
                         {iconG && (
                            <div className="flex items-center gap-1.5 mt-1">
                               <span className="w-1.5 h-1.5 bg-white group-hover:bg-primary-400 duration-200 rounded-full" />
@@ -86,7 +81,9 @@ function GiveMenu() {
                   ))}
                </div>
                <div className="flex justify-center">
-                  <Button name="Scopri" path="/" icon="/images/Group 201.svg" />
+                  <Button path="/" icon="/images/Group 201.svg">
+                     Scopri
+                  </Button>
                </div>
             </div>
          </div>

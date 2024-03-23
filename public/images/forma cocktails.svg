@@ -1,0 +1,22 @@
+<svg width="229" height="188" viewBox="0 0 229 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_34_100" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="229" height="188">
+<rect width="229" height="188" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_34_100)">
+<mask id="mask1_34_100" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-197" y="-1" width="930" height="190">
+<path d="M732.908 -0.262695H-196.169V188.514H732.908V-0.262695Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_34_100)">
+<path d="M253.942 33.7278L188.743 97.0864L252.102 162.285L317.3 98.9264L253.942 33.7278Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M254.388 2.6447L157.664 96.6392L251.659 193.363L348.383 99.3688L254.388 2.6447Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M254.759 -27.0813L127.933 96.1655L251.18 222.992L378.006 99.7447L254.759 -27.0813Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M111.359 112.544L-47.4551 266.876L106.877 425.691L265.692 271.358L111.359 112.544Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M115.633 -235.782L-43.1817 -81.4492L111.151 77.3653L269.965 -76.9672L115.633 -235.782Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M-29.8581 30.3538L-95.0567 93.7124L-31.6981 158.911L33.5006 95.5524L-29.8581 30.3538Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M-29.4195 -0.734193L-126.144 93.2603L-32.1492 189.984L64.575 95.9899L-29.4195 -0.734193Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M-29.0412 -30.4529L-155.867 92.7939L-32.6204 219.62L94.2056 96.3731L-29.0412 -30.4529Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M110.919 144.079L-15.9073 267.326L107.34 394.152L234.166 270.905L110.919 144.079Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M116.092 -204.244L-10.7344 -80.9971L112.512 45.829L239.338 -77.4179L116.092 -204.244Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+</g>
+</g>
+</svg>

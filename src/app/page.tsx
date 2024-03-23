@@ -12,12 +12,12 @@ function Homepage() {
    return (
       <main>
          <Header title="L’arte del gusto a Torino" />
-         {/* <OurPhilosophy />
+         <OurPhilosophy />
          <PersonDetails />
          <OurOffer />
          <GiveMenu />
          <Prenotation />
-         <Contact /> */}
+         <Contact />
          <Map />
       </main>
    );

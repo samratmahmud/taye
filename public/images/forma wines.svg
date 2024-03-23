@@ -1,0 +1,23 @@
+<svg width="189" height="229" viewBox="0 0 189 229" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_34_123" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="189" height="229">
+<rect y="229" width="229" height="189" transform="rotate(-90 0 229)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_34_123)">
+<mask id="mask1_34_123" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="-497" width="189" height="930">
+<path d="M0 -497L0 432.077H188.777L188.777 -497H0Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_34_123)">
+<path d="M33.9909 -18.0336L97.3496 47.165L162.548 -16.1936L99.1896 -81.3923L33.9909 -18.0336Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M2.90789 -18.48L96.9023 78.2441L193.626 -15.7503L99.632 -112.474L2.90789 -18.48Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M-26.8181 -18.8505L96.4287 107.976L223.255 -15.2712L100.008 -142.097L-26.8181 -18.8505Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M112.807 124.549L267.14 283.363L425.954 129.031L271.622 -29.7839L112.807 124.549Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M116.429 -158.459L270.762 0.355469L429.576 -153.977L275.244 -312.792L116.429 -158.459Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M-235.518 120.275L-81.1855 279.09L77.629 124.757L-76.7036 -34.0573L-235.518 120.275Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M30.6169 265.766L93.9756 330.965L159.174 267.606L95.8156 202.408L30.6169 265.766Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M-0.47101 265.327L93.5234 362.051L190.248 268.056L96.2531 171.332L-0.47101 265.327Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M-30.1892 264.949L93.0576 391.775L219.884 268.529L96.6368 141.703L-30.1892 264.949Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M144.342 124.99L267.589 251.816L394.415 128.57L271.168 1.74354L144.342 124.99Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M-203.98 119.817L-80.7334 246.643L46.0926 123.396L-77.1542 -3.43028L-203.98 119.817Z" stroke="#C49D7E" stroke-width="3" stroke-miterlimit="10"/>
+</g>
+</g>
+</svg>

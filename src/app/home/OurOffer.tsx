@@ -4,22 +4,22 @@ import React from "react";
 
 const offerName = [
    {
-      background: "/images/cocktails (1).jpg",
+      thumb: "/images/cocktails (1).jpg",
       title: "Cocktails",
       describtion: "gusto in ogni goccia.",
    },
    {
-      background: "/images/desserts.jpg",
+      thumb: "/images/desserts.jpg",
       title: "Wines Beers",
       describtion: "gusto che si sorseggia.",
    },
    {
-      background: "/images/tayeri.jpg",
+      thumb: "/images/tayeri.jpg",
       title: "Tayeri",
       describtion: "sapori senza confini.",
    },
    {
-      background: "/images/desserts.jpg",
+      thumb: "/images/desserts (1).jpg",
       title: "Desserts",
       describtion: "dolcezza che incanta.",
    },
@@ -33,11 +33,11 @@ function OurOffer() {
                <Titles title="Le nostre offerte." />
             </div>
             <div className="grid grid-cols-4">
-               {offerName.map(({background, title, describtion}, index) => (
+               {offerName.map(({thumb, title, describtion}, index) => (
                   <div
                      key={index}
-                     className="min-h-[688px] px-5 bg-cover bg-no-repeat flex flex-col justify-center items-center relative z-0"
-                     style={{backgroundImage: `url(${background})`}}
+                     className="min-h-[670px] bg-cover bg-center relative z-0"
+                     style={{backgroundImage: `url('${thumb}')`}}
                   >
                      <span
                         className="h-full absolute top-0 left-0 right-0 -z-10"
@@ -45,10 +45,14 @@ function OurOffer() {
                            backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.68) 100%)`,
                         }}
                      />
-                     <h2 className="text-12xl font-normal text-primary-400 font-bitter-rose text-center">
-                        {title}
-                     </h2>
-                     <p className="text-3xl">{describtion}</p>
+                     <div className="absolute px-5 w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-full">
+                        <div className="translate-y-[80px]">
+                           <h2 className="text-12xl font-normal text-primary-400 font-bitter-rose text-center">
+                              {title}
+                           </h2>
+                           <p className="text-3xl">{describtion}</p>
+                        </div>
+                     </div>
                   </div>
                ))}
             </div>
