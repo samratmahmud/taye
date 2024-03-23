@@ -59,6 +59,7 @@ function Navbar() {
                               href={path}
                               key={index}
                               className="text-md font-medium"
+                              target="_blank"
                            >
                               {title}
                            </Link>

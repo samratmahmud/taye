@@ -118,6 +118,7 @@ function Footer() {
                                  href={path}
                                  key={index}
                                  className="px-1.5 py-1"
+                                 target="_blank"
                               >
                                  <img
                                     className="hover:opacity-80 duration-200"

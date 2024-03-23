@@ -29,7 +29,11 @@ function Prenotation() {
                   Ti verrà inviata una conferma della sua prenotazione
                </p>
                <div className="flex items-center gap-4 justify-center mb-14">
-                  <input className="w-4 h-4" type="checkbox" id="checkbox" />
+                  <input
+                     className="w-4 h-4 cursor-pointer"
+                     type="checkbox"
+                     id="checkbox"
+                  />
                   <p className="font-normal leading-[1.42em]">
                      Iscriviti alla newsletter
                   </p>
