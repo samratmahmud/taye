@@ -6,7 +6,7 @@ import Register from "./Register";
 function Menupage() {
    return (
       <main>
-         <Header title="Il nostro menu ‘" />
+         <Header title="Il nostro menu '" />
          <MenuGroups />
          <Register />
       </main>
