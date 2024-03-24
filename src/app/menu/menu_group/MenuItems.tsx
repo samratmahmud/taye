@@ -23,7 +23,7 @@ function MenuItems(props: MenuItemsProps) {
                }}
             />
 
-            <div className="flex gap-2.5 items-center -mt-[26px]">
+            <div className="md:flex hidden gap-2.5 items-center -mt-[26px]">
                <div className="flex flex-col gap-1 w-full opacity-50">
                   <hr className="border border-primary-400 w-full" />
                   <hr className="border border-primary-400 w-full" />
@@ -33,17 +33,28 @@ function MenuItems(props: MenuItemsProps) {
                </p>
             </div>
          </div>
-         <p className="max-w-[465px] leading-[1.41em]">{describtion}</p>
-         {iconG && (
-            <div className="flex items-center gap-1.5 mt-1">
-               <span className="w-1.5 h-1.5 bg-white group-hover:bg-primary-400 duration-200 rounded-full" />
-               <div className="flex gap-1.5">
-                  {iconG.map((icon, index) => (
-                     <img key={index} src={icon} alt="" />
-                  ))}
+         <p className="max-w-[465px] leading-[1.41em] mb-1 md:mb-0">
+            {describtion}
+         </p>
+         <div
+            className={`flex items-center ${
+               iconG ? "justify-between" : "justify-end"
+            }`}
+         >
+            {iconG && (
+               <div className="flex items-center gap-1.5 mt-1">
+                  <span className="w-1.5 h-1.5 bg-white group-hover:bg-primary-400 duration-200 rounded-full" />
+                  <div className="flex gap-1.5">
+                     {iconG.map((icon, index) => (
+                        <img key={index} src={icon} alt="" />
+                     ))}
+                  </div>
                </div>
-            </div>
-         )}
+            )}
+            <p className="text-[21px] font-medium leading-[1.4em] text-primary-400 inline md:hidden">
+               {price}
+            </p>
+         </div>
       </div>
    );
 }

@@ -61,7 +61,7 @@ function Navbar() {
             </div>
             <div className="md:hidden">
                <Drawer onClose={toggle} open={open} direction="left">
-                  <div className="bg-black h-full w-[100vw] p-8">
+                  <div className="bg-black h-full w-[100vw] p-7 overflow-y-scroll">
                      <div className="flex items-center gap-5 justify-between mb-[136px]">
                         <Link href="/">
                            <img src="/images/logo in alto sx (1).svg" alt="" />

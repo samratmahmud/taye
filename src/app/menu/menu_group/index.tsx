@@ -5,7 +5,7 @@ import Button from "@/components/common/Button";
 function MenuGroups() {
    return (
       <section>
-         <div className="container mb-32">
+         <div className="container lg:mb-32 md:mb-24 mb-[74px] pt-24 sm:pt-14 md:pt-0">
             <div className="max-w-[1085px] mx-auto flex flex-col gap-[70px]">
                <MenuBar
                   thambnail="/images/cocktails.png"
@@ -14,7 +14,8 @@ function MenuGroups() {
                      {
                         titles: "NEGRONI TORINESE",
                         price: "€10",
-                        describtion: "Vermouth rosso, Bitter, Gin, scorza d'arancia.",
+                        describtion:
+                           "Vermouth rosso, Bitter, Gin, scorza d'arancia.",
                      },
                      {
                         titles: "MANGO TANGO",
@@ -30,17 +31,29 @@ function MenuGroups() {
                      {
                         titles: "BASILICO MULE",
                         price: "€11",
-                        describtion: "Vodka, succo di lime, sciroppo di basilico, ginger beer.",
+                        describtion:
+                           "Vodka, succo di lime, sciroppo di basilico, ginger beer.",
                      },
                      {
                         titles: "CILANTRO CITRUS SMASH",
                         price: "€13",
-                        describtion: "Rum, cilantro, sciroppo d'agave, succo di lime, angostura.",
+                        describtion:
+                           "Rum, cilantro, sciroppo d'agave, succo di lime, angostura.",
                      },
                   ]}
+                  action={
+                     <Button
+                        className="lg:hidden"
+                        path="/"
+                        icon="/images/Group 206.svg"
+                     >
+                        Mostra altro
+                     </Button>
+                  }
                />
                <MenuBar
                   thambnail="/images/wines.png"
+                  thambnailM="/images/wines.jpg"
                   title="Wines"
                   menuItem={[
                      {
@@ -49,7 +62,8 @@ function MenuGroups() {
                         describtion: "Piemonte, Italia",
                      },
                      {
-                        titles: "BARBERA D’ALBA SUPERIORE / MARCHESI DI BAROLO, 2016",
+                        titles:
+                           "BARBERA D’ALBA SUPERIORE / MARCHESI DI BAROLO, 2016",
                         price: "€12",
                         describtion: "Piemonte, Italia",
                      },
@@ -69,7 +83,8 @@ function MenuGroups() {
                         describtion: "Piemonte, Italia",
                      },
                      {
-                        titles: "BARBERA D’ALBA SUPERIORE / MARCHESI DI BAROLO, 2016",
+                        titles:
+                           "BARBERA D’ALBA SUPERIORE / MARCHESI DI BAROLO, 2016",
                         price: "€18",
                         describtion: "Piemonte, Italia",
                      },
@@ -115,17 +130,20 @@ function MenuGroups() {
 
                <MenuBar
                   thambnail="/images/beers.png"
+                  thambnailM="/images/beers.jpg"
                   title="Beers"
                   menuItem={[
                      {
                         titles: "WEST COAST IPA",
                         price: "€11",
-                        describtion: "Malto d'orzo, luppolo Cascade, lievito, acqua.",
+                        describtion:
+                           "Malto d'orzo, luppolo Cascade, lievito, acqua.",
                      },
                      {
                         titles: "IRISH DRY STOUT",
                         price: "€5",
-                        describtion: "Malto d'orzo tostato, luppolo, lievito, acqua.",
+                        describtion:
+                           "Malto d'orzo tostato, luppolo, lievito, acqua.",
                      },
                      {
                         titles: "BELGIAN WIT",
@@ -137,6 +155,7 @@ function MenuGroups() {
                />
                <MenuBar
                   thambnail="/images/tayèri.png"
+                  thambnailM="/images/tayèri.jpg"
                   title="Tayeri '"
                   menuItem={[
                      {
@@ -172,17 +191,20 @@ function MenuGroups() {
                      {
                         titles: "TAYèRE DEI FORMAGGI LOCALI",
                         price: "€20",
-                        describtion: "Assortimento di formaggi regionali, miele, noci.",
+                        describtion:
+                           "Assortimento di formaggi regionali, miele, noci.",
                      },
                      {
                         titles: "TAYèRE DOLCEZZA",
                         price: "€20",
-                        describtion: "Selezione di frutta fresca, biscotti, cioccolato fondente.",
+                        describtion:
+                           "Selezione di frutta fresca, biscotti, cioccolato fondente.",
                      },
                   ]}
                />
                <MenuBar
                   thambnail="/images/tayèri.png"
+                  thambnailM="/images/dessert.jpg"
                   title="Desserts"
                   menuItem={[
                      {
@@ -213,7 +235,8 @@ function MenuGroups() {
                      {
                         titles: "MOUSSE AL LIMONE",
                         price: "€7",
-                        describtion: "Assortimento di formaggi regionali, miele, noci.",
+                        describtion:
+                           "Assortimento di formaggi regionali, miele, noci.",
                      },
                   ]}
                   action={
