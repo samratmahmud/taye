@@ -80,7 +80,7 @@ function MenuBar(props: MenuGroupProps) {
                   </div>
                </div>
                {menuItemP && (
-                  <div className="flex flex-col gap-10 border-y lg:border-y-0 border-primary-400 py-5">
+                  <div className="lg:flex hidden flex-col gap-10 border-y lg:border-y-0 border-primary-400 py-5">
                      {menuItemP.map(
                         ({titles, price, describtion, iconG}, index) => (
                            <MenuItems
@@ -96,7 +96,26 @@ function MenuBar(props: MenuGroupProps) {
                )}
             </div>
          </div>
-         <div>{action}</div>
+         <div className="flex justify-center group-last:justify-start">
+            {action}
+         </div>
+         <div className="lg:hidden mt-4">
+            {menuItemP && (
+               <div className="flex flex-col gap-10 border-y lg:border-y-0 border-primary-400 py-5">
+                  {menuItemP.map(
+                     ({titles, price, describtion, iconG}, index) => (
+                        <MenuItems
+                           key={index}
+                           titles={titles}
+                           price={price}
+                           describtion={describtion}
+                           iconG={iconG}
+                        />
+                     )
+                  )}
+               </div>
+            )}
+         </div>
       </div>
    );
 }

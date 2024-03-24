@@ -42,11 +42,7 @@ function MenuGroups() {
                      },
                   ]}
                   action={
-                     <Button
-                        className="lg:hidden"
-                        path="/"
-                        icon="/images/Group 206.svg"
-                     >
+                     <Button path="/" icon="/images/Group 206.svg">
                         Mostra altro
                      </Button>
                   }
@@ -152,6 +148,11 @@ function MenuGroups() {
                            "Malto d'orzo, frumento, coriandolo, scorza d'arancia, luppolo, lievito, acqua.",
                      },
                   ]}
+                  action={
+                     <Button path="/" icon="/images/Group 206.svg">
+                        Mostra altro
+                     </Button>
+                  }
                />
                <MenuBar
                   thambnail="/images/tayèri.png"
@@ -201,6 +202,11 @@ function MenuGroups() {
                            "Selezione di frutta fresca, biscotti, cioccolato fondente.",
                      },
                   ]}
+                  action={
+                     <Button path="/" icon="/images/Group 206.svg">
+                        Mostra altro
+                     </Button>
+                  }
                />
                <MenuBar
                   thambnail="/images/tayèri.png"

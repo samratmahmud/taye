@@ -25,13 +25,16 @@ function Register() {
                      />
                   </div>
                   <div className="flex items-center justify-center gap-2.5 mb-6">
-                     <input className="w-4 h-4" type="checkbox" />
+                     <input
+                        className="w-4 h-4 cursor-pointer"
+                        type="checkbox"
+                     />
                      <div className="text-xs font-normal leading-[1.42em]">
                         Inviando questa richiesta si accetta la nostra{" "}
                         <Link href="/">privacy policy</Link>
                      </div>
                   </div>
-                  <div>
+                  <div className="flex justify-center">
                      <Button path="/" icon="/images/Group 201.svg">
                         Iscriviti
                      </Button>

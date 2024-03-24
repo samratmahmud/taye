@@ -13,22 +13,20 @@ export interface ButtonProps
 }
 
 function Button(props: ButtonProps) {
-   const {children, path, icon, className} = props;
+   const {children, path, icon} = props;
 
    return (
-      <div className={`${className}`}>
-         <Link
-            href={path}
-            className="flex gap-1 hover:gap-2.5 duration-300 items-center justify-center hover:no-underline px-6"
-         >
-            <p className="text-md font-normal">{children}</p>
-            <div className="border border-primary-400 rounded-full p-1">
-               <div className="border border-primary-400 rounded-full p-[5px]">
-                  <img className="w-[15px]" src={icon} alt="" />
-               </div>
+      <Link
+         href={path}
+         className="flex gap-1 hover:gap-2.5 duration-300 items-center  hover:no-underline"
+      >
+         <p className="text-md font-normal">{children}</p>
+         <div className="border border-primary-400 rounded-full p-1">
+            <div className="border border-primary-400 rounded-full p-[5px]">
+               <img className="w-[15px]" src={icon} alt="" />
             </div>
-         </Link>
-      </div>
+         </div>
+      </Link>
    );
 }
 

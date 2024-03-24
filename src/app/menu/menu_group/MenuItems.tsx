@@ -13,7 +13,7 @@ function MenuItems(props: MenuItemsProps) {
 
    return (
       <div className="group">
-         <div className="gap-2.5 items-end">
+         <div className="gap-2.5 items-end mb-[3px] md:mb-0">
             <h3
                className="text-xl inline font-medium text-primary-400 leading-[1.42em] flex-shrink-0 relative z-10"
                dangerouslySetInnerHTML={{
