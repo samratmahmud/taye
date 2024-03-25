@@ -4,6 +4,8 @@ import type {Metadata} from "next";
 import {Syncopate} from "next/font/google";
 import localFont from "next/font/local";
 
+// src\app\layout.tsx
+
 const syncopate = Syncopate({
    subsets: ["latin"],
    weight: ["400", "700"],
