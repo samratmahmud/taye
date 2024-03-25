@@ -44,7 +44,7 @@ function SelectField(props: SelectFieldProps) {
                         tabIndex={0}
                      >
                         <img src={icon} alt="" />
-                        <span className="text-primary-600">{selected}</span>
+                        <span>{selected}</span>
                         <img
                            className={`duration-200 ${
                               open ? "rotate-180" : ""

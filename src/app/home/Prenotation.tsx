@@ -1,4 +1,5 @@
 import Button from "@/components/common/Button";
+import DateField from "@/components/common/DateField";
 import SelectField from "@/components/common/SelectField";
 import TextField from "@/components/common/TextField";
 import Titles from "@/components/common/Titles";
@@ -26,12 +27,12 @@ function Prenotation() {
                      icon="/images/Group 212.svg"
                      options={["2", "3", "4", "5"]}
                   />
+                  <DateField icon="/images/Group 213.svg" />
                   <TextField
-                     icon="/images/Group 213.svg"
-                     type="date"
-                     placeholder="2*"
+                     type="time"
+                     startIcon="/images/Group 214.svg"
+                     arrow
                   />
-                  <TextField type="time" placeholder="2*" />
                </div>
                <p className="text-base text-center font-normal leading-[1.41em] md:mb-3 mb-4">
                   Ti verrà inviata una conferma della sua prenotazione
