@@ -13,16 +13,18 @@ function TextField(props: TextFieldProps) {
 
    return (
       <div
-         className={`flex items-center justify-between gap-2 border   duration-200 rounded-md cursor-pointer px-5 ${
+         className={`flex items-center justify-between gap-2 border   duration-200 rounded-md cursor-pointer px-5 max-h-[62px] ${
             !focus ? "border-primary-400" : "border-primary-600"
          }`}
          tabIndex={0}
          onFocus={() => setFocus(true)}
          onBlur={() => setFocus(false)}
       >
-         {startIcon && <img className="flex-shrink-0" src={startIcon} alt="" />}
+         {startIcon && (
+            <img className="w-6 h-6 flex-shrink-0" src={startIcon} alt="" />
+         )}
          <input
-            className="w-full placeholder:font-normal placeholder:text-primary-600 leading-[1.44em] py-[18px] px-5"
+            className="w-full placeholder:font-normal leading-[1.44em]  placeholder:text-primary-600 py-[18px]"
             {...rest}
          />
          {arrow && (

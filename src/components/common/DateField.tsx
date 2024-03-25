@@ -28,7 +28,7 @@ function DateField(props: datePickerProps) {
          <DatePicker
             selected={startDate}
             onChange={(date) => setStartDate(date)}
-            className="py-[18px] px-5 cursor-pointer"
+            className="py-[17px] px-5 cursor-pointer"
          />
          <img
             className={`duration-200 ${focus ? "rotate-180" : ""}`}
