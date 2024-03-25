@@ -47,7 +47,7 @@ const ChillaxComplete = localFont({
          style: "normal",
       },
       {
-         path: "../assets/fonts/Chillax_Complete/Chillax-SemiBold.otf",
+         path: "../assets/fonts/Chillax_Complete/Chillax-Semibold.otf",
          weight: "600",
          style: "normal",
       },
