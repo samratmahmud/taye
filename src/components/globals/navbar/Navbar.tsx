@@ -48,7 +48,7 @@ function Navbar() {
          <div className="container">
             <div className="flex md:items-center justify-between">
                <Link href="/">
-                  <img src="/images/logo in alto sx.svg" alt="" />
+                  <img className="md:w-auto w-12" src="/images/logo in alto sx.svg" alt="" />
                </Link>
                <div
                   className={`hidden md:block border-2 border-primary-400 rounded-full duration-300 pl-9 pr-4 bg-gray-950/60 max-w-[535px] mx-auto ${itemsWrapper}`}
@@ -78,9 +78,7 @@ function Navbar() {
                                  key={index}
                                  onClick={() => setTab(index)}
                                  className={`text-[24px] font-medium  duration-300 hover:no-underline leading-[1.42em] py-1.5 ${
-                                    tab === index
-                                       ? "text-white"
-                                       : "text-white/70"
+                                    tab === index ? "text-white" : "text-white/70"
                                  }`}
                               >
                                  {title}
@@ -98,9 +96,7 @@ function Navbar() {
                            <img
                               className="mt-0.5"
                               src={`${
-                                 visible
-                                    ? "images/Group 210.svg"
-                                    : "/images/Group 197 (1).svg"
+                                 visible ? "images/Group 210.svg" : "/images/Group 197 (1).svg"
                               }`}
                               alt=""
                            />
