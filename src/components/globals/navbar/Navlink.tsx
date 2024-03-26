@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import useNavbarEffect from "@/hooks/useNavbarEffect";
 import Link from "next/link";
 import React, {useState} from "react";
 
@@ -26,13 +25,13 @@ function Navlink() {
    const [visible, setVisible] = useState(false);
 
    return (
-      <div className="flex gap-4 items-center justify-between">
-         <div className="flex gap-8">
+      <div className="flex gap-2 items-center justify-between">
+         <div className="flex gap-4">
             {navLink.map(({title, path}, index) => (
                <Link
                   href={path}
                   key={index}
-                  className="text-md font-medium hover:text-gray-600 duration-300 hover:no-underline"
+                  className="text-md font-medium hover:text-gray-600 duration-300 hover:no-underline p-2"
                   target="_blank"
                >
                   {title}
