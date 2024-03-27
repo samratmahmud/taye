@@ -30,11 +30,6 @@ function Button(props: ButtonProps) {
                <img className="w-[15px]" src={icon} alt="" />
             </div>
          </div>
-         {/* <div className="border border-primary-400 rounded-full p-1">
-            <div className="border border-primary-400 rounded-full p-[5px]">
-               <img className="w-[15px]" src={icon} alt="" />
-            </div>
-         </div> */}
       </Element>
    );
 }
