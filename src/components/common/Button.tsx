@@ -25,11 +25,16 @@ function Button(props: ButtonProps) {
          className="flex gap-1 hover:gap-2.5 duration-300 items-center  hover:no-underline"
       >
          <p className="text-md font-normal">{children}</p>
-         <div className="border border-primary-400 rounded-full p-1">
-            <div className="border border-primary-400 rounded-full p-[5px]">
+         <div>
+            <div className="spinner spinner-3">
                <img className="w-[15px]" src={icon} alt="" />
             </div>
          </div>
+         {/* <div className="border border-primary-400 rounded-full p-1">
+            <div className="border border-primary-400 rounded-full p-[5px]">
+               <img className="w-[15px]" src={icon} alt="" />
+            </div>
+         </div> */}
       </Element>
    );
 }
