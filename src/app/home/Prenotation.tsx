@@ -19,30 +19,35 @@ function Prenotation() {
                <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-x-[38px] md:gap-y-6 gap-y-4 mb-5">
                   <TextField type="text" placeholder="Nome*" />
                   <TextField type="text" placeholder="Email*" />
-                  <TextField
-                     type="number"
-                     placeholder="Telefono (consigliato)"
-                  />
-                  <SelectField
-                     icon="/images/Group 212.svg"
-                     options={["2", "3", "4", "5"]}
-                  />
+                  <TextField type="number" placeholder="Telefono (consigliato)" />
+                  <SelectField icon="/images/Group 212.svg" options={["2", "3", "4", "5"]} />
                   <DateField icon="/images/Group 213.svg" />
-                  <TextField
-                     type="time"
-                     startIcon="/images/Group 214.svg"
-                     arrow
+                  <SelectField
+                     icon="/images/Group 214.svg"
+                     options={[
+                        "17:30",
+                        "18:00",
+                        "18:30",
+                        "19:00",
+                        "19:30",
+                        "20:00",
+                        "20:30",
+                        "21:00",
+                        "21:30",
+                        "22:00",
+                        "22:30",
+                        "23:00",
+                        "23:30",
+                        "00:00",
+                        "00:30",
+                     ]}
                   />
                </div>
                <p className="text-base text-center font-normal leading-[1.41em] md:mb-3 mb-4">
                   Ti verrà inviata una conferma della sua prenotazione
                </p>
                <div className="flex items-center gap-4 justify-center xl:mb-14 lg:mb-12 md:mb-9 sm:mb-7 mb-5">
-                  <input
-                     className="w-4 h-4 cursor-pointer"
-                     type="checkbox"
-                     id="checkbox"
-                  />
+                  <input className="w-4 h-4 cursor-pointer" type="checkbox" id="checkbox" />
                   <p className="text-base font-normal leading-[1.42em]">
                      Iscriviti alla newsletter
                   </p>

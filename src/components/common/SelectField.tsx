@@ -4,10 +4,7 @@ import React, {Fragment, useState} from "react";
 import {Listbox, Transition} from "@headlessui/react";
 
 interface SelectFieldProps
-   extends React.DetailedHTMLProps<
-      React.InputHTMLAttributes<HTMLInputElement>,
-      HTMLInputElement
-   > {
+   extends React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> {
    label?: string;
    icon?: string;
    options: string[];
@@ -45,13 +42,7 @@ function SelectField(props: SelectFieldProps) {
                      >
                         <img src={icon} alt="" />
                         <span>{selected}</span>
-                        <img
-                           className={`duration-200 ${
-                              open ? "rotate-180" : ""
-                           }`}
-                           src="/images/freccia data.svg"
-                           alt=""
-                        />
+                        <img className={`duration-200`} src="/images/freccia data.svg" alt="" />
                      </div>
                   </Listbox.Button>
 
@@ -69,15 +60,8 @@ function SelectField(props: SelectFieldProps) {
                            className="absolute w-full bg-gray-950 z-20 translate-y-1 shadow-6xl rounded-[10px] overflow-hidden py-2"
                         >
                            {options.map((option, index) => (
-                              <Listbox.Option
-                                 as="div"
-                                 key={index}
-                                 value={option}
-                              >
-                                 <div
-                                    role="button"
-                                    className="px-3 py-1.5 hover:bg-neutral-600/10"
-                                 >
+                              <Listbox.Option as="div" key={index} value={option}>
+                                 <div role="button" className="px-3 py-1.5 hover:bg-neutral-600/10">
                                     {option}
                                  </div>
                               </Listbox.Option>

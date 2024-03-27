@@ -13,23 +13,23 @@ function TextField(props: TextFieldProps) {
 
    return (
       <div
-         className={`flex items-center justify-between gap-2 border   duration-200 rounded-md cursor-pointer px-5 max-h-[62px] ${
+         className={`flex items-center justify-between gap-2 border duration-200 rounded-md cursor-pointer max-h-[62px] relative ${
             !focus ? "border-primary-400" : "border-primary-600"
          }`}
          tabIndex={0}
          onFocus={() => setFocus(true)}
          onBlur={() => setFocus(false)}
       >
-         {startIcon && (
-            <img className="w-6 h-6 flex-shrink-0" src={startIcon} alt="" />
-         )}
+         {startIcon && <img className="w-6 h-6 absolute left-5" src={startIcon} alt="" />}
          <input
-            className="w-full placeholder:font-normal leading-[1.44em]  placeholder:text-primary-600 py-[18px]"
+            className={`w-full placeholder:font-normal leading-[1.44em] px-5 placeholder:text-primary-600 py-[18px] ${
+               startIcon ? "pl-16" : ""
+            }`}
             {...rest}
          />
          {arrow && (
             <img
-               className={`duration-200 ${focus ? "rotate-180" : ""}`}
+               className={`absolute right-5 duration-200`}
                src="/images/freccia data.svg"
                alt=""
             />

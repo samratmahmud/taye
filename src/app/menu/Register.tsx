@@ -19,23 +19,17 @@ function Register() {
                   <div className="flex flex-col gap-[18px] lg:max-w-[330px] mx-auto md:mb-7 mb-5">
                      <TextField type="text" placeholder="nome*" />
                      <TextField type="email" placeholder="Email*" />
-                     <TextField
-                        type="number"
-                        placeholder="Telefono (consigliato)"
-                     />
+                     <TextField type="number" placeholder="Telefono (consigliato)" />
                   </div>
                   <div className="flex items-center justify-center gap-2.5 mb-6">
-                     <input
-                        className="w-4 h-4 cursor-pointer"
-                        type="checkbox"
-                     />
-                     <div className="text-xs font-normal leading-[1.42em]">
+                     <input className="w-4 h-4 cursor-pointer" type="checkbox" />
+                     <div className="text-base md:text-xs font-normal leading-[1.42em]">
                         Inviando questa richiesta si accetta la nostra{" "}
                         <Link href="/">privacy policy</Link>
                      </div>
                   </div>
                   <div className="flex justify-center">
-                     <Button path="/" icon="/images/Group 201.svg">
+                     <Button as="button" icon="/images/Group 201.svg">
                         Iscriviti
                      </Button>
                   </div>
@@ -53,8 +47,7 @@ function Register() {
                      <span
                         className="absolute top-0 left-0 right-0 h-full opacity-60"
                         style={{
-                           backgroundImage:
-                              "linear-gradient(#000000 50%, #000000 50%)",
+                           backgroundImage: "linear-gradient(#000000 50%, #000000 50%)",
                         }}
                      />
                      <img src="/images/cocktails.jpg" alt="" />

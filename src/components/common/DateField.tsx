@@ -28,13 +28,9 @@ function DateField(props: datePickerProps) {
          <DatePicker
             selected={startDate}
             onChange={(date) => setStartDate(date)}
-            className="py-[17px] px-5 cursor-pointer"
+            className="py-[17px] px-5 cursor-pointer w-full"
          />
-         <img
-            className={`duration-200 ${focus ? "rotate-180" : ""}`}
-            src="/images/freccia data.svg"
-            alt=""
-         />
+         <img src="/images/freccia data.svg" alt="" />
       </label>
    );
 }

@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Titles from "@/components/common/Titles";
+import Link from "next/link";
 import React from "react";
 
 const offerName = [
@@ -34,7 +35,8 @@ function OurOffer() {
             </div>
             <div className="grid xl:grid-cols-4 md:grid-cols-2">
                {offerName.map(({thumb, title, describtion}, index) => (
-                  <div
+                  <Link
+                     href="/"
                      key={index}
                      className="lg:min-h-[670px] sm:min-h-[400px] min-h-[134px] bg-cover bg-center relative z-0"
                      style={{backgroundImage: `url('${thumb}')`}}
@@ -50,12 +52,10 @@ function OurOffer() {
                            <h2 className="text-12xl font-normal text-primary-400 font-bitter-rose text-center">
                               {title}
                            </h2>
-                           <p className="2xl:text-3xl sm:text-[25px] text-base">
-                              {describtion}
-                           </p>
+                           <p className="2xl:text-3xl sm:text-[25px] text-base">{describtion}</p>
                         </div>
                      </div>
-                  </div>
+                  </Link>
                ))}
             </div>
          </div>

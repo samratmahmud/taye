@@ -36,26 +36,15 @@ function Navbar() {
    const toggle = () => setOpen((prev) => !prev);
    const [tab, setTab] = useState(0);
 
-   const nav = useNavbarEffect(
-      "py-7 bg-transparent",
-      "py-7 bg-black/30 backdrop-blur-[8px]"
-   );
-
-   const itemsWrapper = useNavbarEffect("py-3.5", "py-2.5");
-
    return (
-      <nav className={`fixed left-0 right-0 z-[1080] duration-300 ${nav}`}>
+      <nav className={`fixed left-0 right-0 z-[1080] duration-300 py-7`}>
          <div className="container">
             <div className="flex md:items-center justify-between px-3">
                <Link href="/">
-                  <img
-                     className="md:w-auto w-12"
-                     src="/images/logo in alto sx.svg"
-                     alt=""
-                  />
+                  <img className="md:w-auto w-12" src="/images/logo in alto sx.svg" alt="" />
                </Link>
                <div
-                  className={`hidden md:block border-2 border-primary-400 rounded-full duration-300 pl-9 pr-4 bg-gray-950/60 max-w-[535px] mx-auto ${itemsWrapper}`}
+                  className={`hidden md:block border-2 border-primary-400 rounded-full duration-300 pl-9 pr-4 bg-gray-950/60 max-w-[535px] mx-auto py-3.5`}
                >
                   <Navlink />
                </div>
@@ -64,8 +53,12 @@ function Navbar() {
                </div>
             </div>
             <div className="md:hidden">
-               <Drawer onClose={toggle} open={open} direction="left">
-                  <div className="bg-black h-full w-screen p-8 overflow-y-scroll">
+               <div
+                  className={`fixed z-[1040] duration-500 inset-0 ${
+                     open ? "translate-x-0 ease-in" : "-translate-x-[calc(100%+24px)] ease-out"
+                  }`}
+               >
+                  <div className="bg-black h-full w-screen p-8 overflow-y-auto">
                      <div className="flex items-center gap-5 justify-between mb-[136px]">
                         <Link href="/">
                            <img src="/images/logo in alto sx (1).svg" alt="" />
@@ -82,9 +75,7 @@ function Navbar() {
                                  key={index}
                                  onClick={() => setTab(index)}
                                  className={`text-[24px] font-medium  duration-300 hover:no-underline leading-[1.42em] py-1.5 ${
-                                    tab === index
-                                       ? "text-white"
-                                       : "text-white/70"
+                                    tab === index ? "text-white" : "text-white/70"
                                  }`}
                               >
                                  {title}
@@ -102,16 +93,14 @@ function Navbar() {
                            <img
                               className="mt-0.5"
                               src={`${
-                                 visible
-                                    ? "images/Group 210.svg"
-                                    : "/images/Group 197 (1).svg"
+                                 visible ? "images/Group 210.svg" : "/images/Group 197 (1).svg"
                               }`}
                               alt=""
                            />
                         </Link>
                      </div>
                   </div>
-               </Drawer>
+               </div>
             </div>
          </div>
       </nav>

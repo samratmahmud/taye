@@ -79,25 +79,19 @@ function Footer() {
       <footer className="bg-gray-800">
          <div className="border-y border-primary-400 pt-9 pb-11">
             <div className="container">
-               <div className="grid lg:grid-cols-5 grid-cols-4 gap-x-6 md:gap-y-12 gap-y-6">
-                  <div className="sm:max-w-[250px] col-span-4 sm:col-span-2 lg:col-span-1">
-                     <div className="lg:text-5xl md:text-[36px] text-[31px] leading-[0.81em] md:leading-[1.4em] font-medium hover:no-underline">
+               <div className="grid lg:grid-cols-11 grid-cols-4 gap-x-6 md:gap-y-12 gap-y-6">
+                  <div className="col-span-4 sm:col-span-2 lg:col-span-3 lg:max-w-[260px]">
+                     <div className="lg:text-5xl md:text-[36px] text-[31px] leading-[0.81em] md:leading-[1.4em] font-medium hover:no-underline uppercase mb-5 md:mb-0">
                         tayè.
                      </div>
                      <p className="md:text-lg text-base leading-[1.41em] font-extralight">
-                        Siamo aperti tutti i giorni della settimana dalle ore 18
-                        alle 02. <br /> Puoi trovarci in Corso Moncalieri, 19b,
-                        10131 Torino TO
+                        Siamo aperti tutti i giorni della settimana dalle ore 18 alle 02. <br />{" "}
+                        Puoi trovarci in Corso Moncalieri, 19b, 10131 Torino TO
                      </p>
                   </div>
                   {footerLink.map(({title, links, iconG}, index) => (
-                     <div
-                        key={index}
-                        className="col-span-4 sm:col-span-2 lg:col-span-1"
-                     >
-                        <h2 className="text-lg font-semibold leading-[1.23em] mb-2.5">
-                           {title}
-                        </h2>
+                     <div key={index} className="col-span-4 sm:col-span-2 lg:col-span-2">
+                        <h2 className="text-lg font-semibold leading-[1.23em] mb-2.5">{title}</h2>
                         {links && (
                            <div className="flex flex-col gap-[11px]">
                               {links.map(({name, path}, index) => (
