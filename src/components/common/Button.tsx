@@ -27,7 +27,7 @@ function Button(props: ButtonProps) {
          <p className="text-md font-normal">{children}</p>
          <div>
             <div className="spinner spinner-3">
-               <img className="w-[15px]" src={icon} alt="" />
+               <img className="" src={icon} alt="" />
             </div>
          </div>
       </Element>

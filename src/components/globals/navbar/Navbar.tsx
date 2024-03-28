@@ -1,17 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import useNavbarEffect from "@/hooks/useNavbarEffect";
 import Link from "next/link";
 import React, {useState} from "react";
-import Drawer from "react-modern-drawer";
-import "react-modern-drawer/dist/index.css";
 import Navlink from "./Navlink";
+import NavButton from "./NavButton";
 
-const navLink = [
-   {
-      title: "Home",
-      path: "/",
-   },
+const pages = [
    {
       title: "Filosofia",
       path: "/",
@@ -31,7 +25,6 @@ const navLink = [
 ];
 
 function Navbar() {
-   const [visible, setVisible] = useState(false);
    const [open, setOpen] = useState(false);
    const toggle = () => setOpen((prev) => !prev);
    const [tab, setTab] = useState(0);
@@ -44,9 +37,9 @@ function Navbar() {
                   <img className="md:w-auto w-12" src="/images/logo in alto sx.svg" alt="" />
                </Link>
                <div
-                  className={`hidden md:block border-2 border-primary-400 rounded-full duration-300 pl-9 pr-4 bg-gray-950/60 max-w-[535px] mx-auto py-3.5`}
+                  className={`hidden md:block border-2 border-primary-400 rounded-full duration-300 pl-9 pr-4 bg-gray-950/60 w-max mx-auto py-3.5`}
                >
-                  <Navlink />
+                  <Navlink pages={pages} />
                </div>
                <div className="md:hidden cursor-pointer pl-2" onClick={toggle}>
                   <img src="/images/Group 209.svg" alt="" />
@@ -69,7 +62,7 @@ function Navbar() {
                      </div>
                      <div className="flex flex-col gap-2 items-center">
                         <div className="flex flex-col items-center gap-2 mb-10">
-                           {navLink.map(({title, path}, index) => (
+                           {pages.map(({title, path}, index) => (
                               <Link
                                  href={path}
                                  key={index}
@@ -82,22 +75,7 @@ function Navbar() {
                               </Link>
                            ))}
                         </div>
-                        <Link
-                           href="/"
-                           target="_blank"
-                           onMouseEnter={() => setVisible(true)}
-                           onMouseLeave={() => setVisible(false)}
-                           className="flex items-center gap-1.5 text-md font-medium leading-[1.3em] border hover:no-underline border-primary-400 py-[9px] px-4 rounded-full hover:bg-primary-400 duration-300"
-                        >
-                           <p>Prenota</p>
-                           <img
-                              className="mt-0.5"
-                              src={`${
-                                 visible ? "images/Group 210.svg" : "/images/Group 197 (1).svg"
-                              }`}
-                              alt=""
-                           />
-                        </Link>
+                        <NavButton url="/">Prenota</NavButton>
                      </div>
                   </div>
                </div>

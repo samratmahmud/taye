@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 
-export interface MenuItemsProps {
+export interface ArticleCardProps {
    titles: string;
    price: string;
    describtion: string;
    iconG?: string[];
 }
 
-function MenuItems(props: MenuItemsProps) {
+function ArticleCard(props: ArticleCardProps) {
    const {titles, price, describtion, iconG} = props;
 
    return (
@@ -28,19 +28,11 @@ function MenuItems(props: MenuItemsProps) {
                   <hr className="border border-primary-400 w-full" />
                   <hr className="border border-primary-400 w-full" />
                </div>
-               <p className="text-xl font-medium !leading-[1.42em] text-primary-400">
-                  {price}
-               </p>
+               <p className="text-xl font-medium !leading-[1.42em] text-primary-400">{price}</p>
             </div>
          </div>
-         <p className="max-w-[465px] leading-[1.41em] mb-1 md:mb-0">
-            {describtion}
-         </p>
-         <div
-            className={`flex items-center ${
-               iconG ? "justify-between" : "justify-end"
-            }`}
-         >
+         <p className="max-w-[465px] leading-[1.41em] mb-1 md:mb-0">{describtion}</p>
+         <div className={`flex items-center ${iconG ? "justify-between" : "justify-end"}`}>
             {iconG && (
                <div className="flex items-center gap-1.5 mt-1">
                   <span className="w-1.5 h-1.5 bg-white group-hover:bg-primary-400 duration-200 rounded-full" />
@@ -59,7 +51,7 @@ function MenuItems(props: MenuItemsProps) {
    );
 }
 
-export default MenuItems;
+export default ArticleCard;
 
 function insertLineBreakAfterSlash(str: string) {
    // Use regular expression to find all occurrences of "/"
