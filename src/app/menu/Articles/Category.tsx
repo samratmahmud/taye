@@ -6,13 +6,13 @@ export interface CategoryProps {
    thambnail: string;
    thambnailM?: string;
    title: string;
-   menuItem: ArticleCardProps[];
+   articles: ArticleCardProps[];
    menuItemP?: ArticleCardProps[];
    action?: ReactNode;
 }
 
 function Category(props: CategoryProps) {
-   const {thambnail, thambnailM, title, menuItem, menuItemP, action} = props;
+   const {thambnail, thambnailM, title, articles, menuItemP, action} = props;
 
    return (
       <div className="group">
@@ -24,13 +24,13 @@ function Category(props: CategoryProps) {
                   </h2>
                </div>
                <div className="flex flex-col lg:gap-[41px] md:gap-8 gap-5">
-                  {menuItem.map(({titles, price, describtion, iconG}, index) => (
+                  {articles.map(({titles, price, describtion, icons}, index) => (
                      <ArticleCard
                         key={index}
                         titles={titles}
                         price={price}
                         describtion={describtion}
-                        iconG={iconG}
+                        icons={icons}
                      />
                   ))}
                </div>
@@ -63,13 +63,13 @@ function Category(props: CategoryProps) {
                </div>
                {menuItemP && (
                   <div className="lg:flex hidden flex-col gap-10 border-y lg:border-y-0 border-primary-400 py-5">
-                     {menuItemP.map(({titles, price, describtion, iconG}, index) => (
+                     {menuItemP.map(({titles, price, describtion, icons}, index) => (
                         <ArticleCard
                            key={index}
                            titles={titles}
                            price={price}
                            describtion={describtion}
-                           iconG={iconG}
+                           icons={icons}
                         />
                      ))}
                   </div>
@@ -80,13 +80,13 @@ function Category(props: CategoryProps) {
          <div className="lg:hidden mt-4">
             {menuItemP && (
                <div className="flex flex-col gap-10 border-y lg:border-y-0 border-primary-400 py-5">
-                  {menuItemP.map(({titles, price, describtion, iconG}, index) => (
+                  {menuItemP.map(({titles, price, describtion, icons}, index) => (
                      <ArticleCard
                         key={index}
                         titles={titles}
                         price={price}
                         describtion={describtion}
-                        iconG={iconG}
+                        icons={icons}
                      />
                   ))}
                </div>

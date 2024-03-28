@@ -2,7 +2,7 @@ import React from "react";
 import Category from "./Category";
 import Button from "@/components/common/Button";
 
-function MenuGroups() {
+function Articles() {
    return (
       <section>
          <div className="container lg:mb-32 md:mb-24 mb-[74px] pt-24 sm:pt-14 md:pt-0">
@@ -10,7 +10,7 @@ function MenuGroups() {
                <Category
                   thambnail="/images/cocktails.png"
                   title="Cocktails"
-                  menuItem={[
+                  articles={[
                      {
                         titles: "NEGRONI TORINESE",
                         price: "€10",
@@ -48,7 +48,7 @@ function MenuGroups() {
                   thambnail="/images/wines.png"
                   thambnailM="/images/wines.jpg"
                   title="Wines"
-                  menuItem={[
+                  articles={[
                      {
                         titles: "Chardonnay Langhe DOC / CERETTO, 2018",
                         price: "€18",
@@ -123,7 +123,7 @@ function MenuGroups() {
                   thambnail="/images/beers.png"
                   thambnailM="/images/beers.jpg"
                   title="Beers"
-                  menuItem={[
+                  articles={[
                      {
                         titles: "WEST COAST IPA",
                         price: "€11",
@@ -151,7 +151,7 @@ function MenuGroups() {
                   thambnail="/images/tayèri.png"
                   thambnailM="/images/tayèri.jpg"
                   title="Tayeri '"
-                  menuItem={[
+                  articles={[
                      {
                         titles: "TAYÈRE DEL CONTADINO",
                         price: "€18",
@@ -169,7 +169,7 @@ function MenuGroups() {
                         price: "€26",
                         describtion:
                            "Selezione di salmone affumicato, gamberi, calamari, acciughe.",
-                        iconG: [
+                        icons: [
                            "/images/Group 143.svg",
                            "/images/path402.svg",
                            "/images/Group 141.svg",
@@ -203,13 +203,13 @@ function MenuGroups() {
                   thambnail="/images/tayèri.png"
                   thambnailM="/images/dessert.jpg"
                   title="Desserts"
-                  menuItem={[
+                  articles={[
                      {
                         titles: "TIRAMISù CLASSICO",
                         price: "€8",
                         describtion:
                            "Selezione di salmone affumicato, gamberi, calamari, acciughe.",
-                        iconG: [
+                        icons: [
                            "/images/Group 143.svg",
                            "/images/path402.svg",
                            "/images/Group 141.svg",
@@ -221,7 +221,7 @@ function MenuGroups() {
                         price: "€9",
                         describtion:
                            "Selezione di salmone affumicato, gamberi, calamari, acciughe.",
-                        iconG: ["/images/Group 143.svg", "/images/path402.svg"],
+                        icons: ["/images/Group 143.svg", "/images/path402.svg"],
                      },
                      {
                         titles: "TORTA AL CIOCCOLATO FONDENTE",
@@ -247,4 +247,4 @@ function MenuGroups() {
    );
 }
 
-export default MenuGroups;
+export default Articles;

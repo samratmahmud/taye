@@ -5,11 +5,11 @@ export interface ArticleCardProps {
    titles: string;
    price: string;
    describtion: string;
-   iconG?: string[];
+   icons?: string[];
 }
 
 function ArticleCard(props: ArticleCardProps) {
-   const {titles, price, describtion, iconG} = props;
+   const {titles, price, describtion, icons} = props;
 
    return (
       <div className="group">
@@ -32,12 +32,12 @@ function ArticleCard(props: ArticleCardProps) {
             </div>
          </div>
          <p className="max-w-[465px] leading-[1.41em] mb-1 md:mb-0">{describtion}</p>
-         <div className={`flex items-center ${iconG ? "justify-between" : "justify-end"}`}>
-            {iconG && (
+         <div className={`flex items-center ${icons ? "justify-between" : "justify-end"}`}>
+            {icons && (
                <div className="flex items-center gap-1.5 mt-1">
                   <span className="w-1.5 h-1.5 bg-white group-hover:bg-primary-400 duration-200 rounded-full" />
                   <div className="flex gap-1.5">
-                     {iconG.map((icon, index) => (
+                     {icons.map((icon, index) => (
                         <img key={index} src={icon} alt="" />
                      ))}
                   </div>

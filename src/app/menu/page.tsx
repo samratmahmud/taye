@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../home/Header";
-import MenuGroups from "./menu_group";
+import MenuGroups from "./Articles";
 import Register from "./Register";
 
 function Menupage() {
