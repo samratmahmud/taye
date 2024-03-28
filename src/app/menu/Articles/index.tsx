@@ -1,6 +1,5 @@
 import React from "react";
 import Category from "./Category";
-import Button from "@/components/common/Button";
 
 function Articles() {
    return (
@@ -12,37 +11,32 @@ function Articles() {
                   title="Cocktails"
                   articles={[
                      {
-                        titles: "NEGRONI TORINESE",
+                        title: "NEGRONI TORINESE",
                         price: "€10",
                         describtion: "Vermouth rosso, Bitter, Gin, scorza d'arancia.",
                      },
                      {
-                        titles: "MANGO TANGO",
+                        title: "MANGO TANGO",
                         price: "€12",
                         describtion:
                            "Vodka, succo di mango fresco, sciroppo di lime, foglie di menta.",
                      },
                      {
-                        titles: "APEROL SPRITZ RINFRESCANTE",
+                        title: "APEROL SPRITZ RINFRESCANTE",
                         price: "€9",
                         describtion: "Aperol, Prosecco, soda, arancia a fette.",
                      },
                      {
-                        titles: "BASILICO MULE",
+                        title: "BASILICO MULE",
                         price: "€11",
                         describtion: "Vodka, succo di lime, sciroppo di basilico, ginger beer.",
                      },
                      {
-                        titles: "CILANTRO CITRUS SMASH",
+                        title: "CILANTRO CITRUS SMASH",
                         price: "€13",
                         describtion: "Rum, cilantro, sciroppo d'agave, succo di lime, angostura.",
                      },
                   ]}
-                  action={
-                     <Button path="/" icon="/images/Group 206.svg">
-                        Mostra altro
-                     </Button>
-                  }
                />
                <Category
                   thambnail="/images/wines.png"
@@ -50,73 +44,66 @@ function Articles() {
                   title="Wines"
                   articles={[
                      {
-                        titles: "Chardonnay Langhe DOC / CERETTO, 2018",
+                        title: "Chardonnay Langhe DOC / CERETTO, 2018",
                         price: "€18",
                         describtion: "Piemonte, Italia",
                      },
                      {
-                        titles: "BARBERA D’ALBA SUPERIORE / MARCHESI DI BAROLO, 2016",
+                        title: "BARBERA D’ALBA SUPERIORE / MARCHESI DI BAROLO, 2016",
                         price: "€12",
                         describtion: "Piemonte, Italia",
                      },
                      {
-                        titles: "GAVI DI GAVI / LA SCOLCA, 2019",
+                        title: "GAVI DI GAVI / LA SCOLCA, 2019",
                         price: "€20",
                         describtion: "Piemonte, Italia",
                      },
                      {
-                        titles: "NEBBIOLO DELLE LANGHE / BARBARESCO, 2015",
+                        title: "NEBBIOLO DELLE LANGHE / BARBARESCO, 2015",
                         price: "€25",
                         describtion: "Piemonte, Italia",
                      },
                      {
-                        titles: "Chardonnay Langhe DOC / CERETTO, 2018",
+                        title: "Chardonnay Langhe DOC / CERETTO, 2018",
                         price: "€15",
                         describtion: "Piemonte, Italia",
                      },
                      {
-                        titles: "BARBERA D’ALBA SUPERIORE / MARCHESI DI BAROLO, 2016",
+                        title: "BARBERA D’ALBA SUPERIORE / MARCHESI DI BAROLO, 2016",
                         price: "€18",
                         describtion: "Piemonte, Italia",
                      },
                      {
-                        titles: "GAVI DI GAVI / LA SCOLCA, 2019",
+                        title: "GAVI DI GAVI / LA SCOLCA, 2019",
                         price: "€20",
                         describtion: "Piemonte, Italia",
                      },
                      {
-                        titles: "NEBBIOLO DELLE LANGHE / BARBARESCO, 2015",
+                        title: "NEBBIOLO DELLE LANGHE / BARBARESCO, 2015",
                         price: "€25",
                         describtion: "Piemonte, Italia",
                      },
-                  ]}
-                  menuItemP={[
                      {
-                        titles: "Chardonnay Langhe DOC / CERETTO",
+                        title: "Chardonnay Langhe DOC / CERETTO",
                         price: "€15",
                         describtion: "Piemonte, Italia",
                      },
                      {
-                        titles: "BARBERA D’ALBA SUPERIORE / MARCHESI DI BAROLO",
+                        title: "BARBERA D’ALBA SUPERIORE / MARCHESI DI BAROLO",
                         price: "€18",
                         describtion: "Piemonte, Italia",
                      },
                      {
-                        titles: "GAVI DI GAVI / LA SCOLCA, 2019",
+                        title: "GAVI DI GAVI / LA SCOLCA, 2019",
                         price: "€15",
                         describtion: "Piemonte, Italia",
                      },
                      {
-                        titles: "NEBBIOLO DELLE LANGHE / BARBARESCO, 2015",
+                        title: "NEBBIOLO DELLE LANGHE / BARBARESCO, 2015",
                         price: "€25",
                         describtion: "Piemonte, Italia",
                      },
                   ]}
-                  action={
-                     <Button path="/" icon="/images/Group 206.svg">
-                        Mostra altro
-                     </Button>
-                  }
                />
 
                <Category
@@ -125,27 +112,22 @@ function Articles() {
                   title="Beers"
                   articles={[
                      {
-                        titles: "WEST COAST IPA",
+                        title: "WEST COAST IPA",
                         price: "€11",
                         describtion: "Malto d'orzo, luppolo Cascade, lievito, acqua.",
                      },
                      {
-                        titles: "IRISH DRY STOUT",
+                        title: "IRISH DRY STOUT",
                         price: "€5",
                         describtion: "Malto d'orzo tostato, luppolo, lievito, acqua.",
                      },
                      {
-                        titles: "BELGIAN WIT",
+                        title: "BELGIAN WIT",
                         price: "€6",
                         describtion:
                            "Malto d'orzo, frumento, coriandolo, scorza d'arancia, luppolo, lievito, acqua.",
                      },
                   ]}
-                  action={
-                     <Button path="/" icon="/images/Group 206.svg">
-                        Mostra altro
-                     </Button>
-                  }
                />
                <Category
                   thambnail="/images/tayèri.png"
@@ -153,19 +135,19 @@ function Articles() {
                   title="Tayeri '"
                   articles={[
                      {
-                        titles: "TAYÈRE DEL CONTADINO",
+                        title: "TAYÈRE DEL CONTADINO",
                         price: "€18",
                         describtion:
                            "Selezione di salumi, formaggi locali, olive, e marmellata artigianale.",
                      },
                      {
-                        titles: "TAYÈRE MEDITERRANEO",
+                        title: "TAYÈRE MEDITERRANEO",
                         price: "€22",
                         describtion:
                            "Selezione di salumi, formaggi locali, olive, e marmellata artigianale.",
                      },
                      {
-                        titles: "TAYÈRE DEL MARE",
+                        title: "TAYÈRE DEL MARE",
                         price: "€26",
                         describtion:
                            "Selezione di salmone affumicato, gamberi, calamari, acciughe.",
@@ -177,27 +159,22 @@ function Articles() {
                         ],
                      },
                      {
-                        titles: "TAYÈRE VEGANO",
+                        title: "TAYÈRE VEGANO",
                         price: "€15",
                         describtion:
                            "Selezione di salumi, formaggi locali, olive, e marmellata artigianale.",
                      },
                      {
-                        titles: "TAYèRE DEI FORMAGGI LOCALI",
+                        title: "TAYèRE DEI FORMAGGI LOCALI",
                         price: "€20",
                         describtion: "Assortimento di formaggi regionali, miele, noci.",
                      },
                      {
-                        titles: "TAYèRE DOLCEZZA",
+                        title: "TAYèRE DOLCEZZA",
                         price: "€20",
                         describtion: "Selezione di frutta fresca, biscotti, cioccolato fondente.",
                      },
                   ]}
-                  action={
-                     <Button path="/" icon="/images/Group 206.svg">
-                        Mostra altro
-                     </Button>
-                  }
                />
                <Category
                   thambnail="/images/tayèri.png"
@@ -205,7 +182,7 @@ function Articles() {
                   title="Desserts"
                   articles={[
                      {
-                        titles: "TIRAMISù CLASSICO",
+                        title: "TIRAMISù CLASSICO",
                         price: "€8",
                         describtion:
                            "Selezione di salmone affumicato, gamberi, calamari, acciughe.",
@@ -217,29 +194,25 @@ function Articles() {
                         ],
                      },
                      {
-                        titles: "PANNA COTTA AI FRUTTI DI BOSCO",
+                        title: "PANNA COTTA AI FRUTTI DI BOSCO",
                         price: "€9",
                         describtion:
                            "Selezione di salmone affumicato, gamberi, calamari, acciughe.",
                         icons: ["/images/Group 143.svg", "/images/path402.svg"],
                      },
                      {
-                        titles: "TORTA AL CIOCCOLATO FONDENTE",
+                        title: "TORTA AL CIOCCOLATO FONDENTE",
                         price: "€10",
                         describtion:
                            "Selezione di salumi, formaggi locali, olive, e marmellata artigianale.",
                      },
                      {
-                        titles: "MOUSSE AL LIMONE",
+                        title: "MOUSSE AL LIMONE",
                         price: "€7",
                         describtion: "Assortimento di formaggi regionali, miele, noci.",
                      },
                   ]}
-                  action={
-                     <Button path="/" icon="/images/Group 197.svg">
-                        Legenda allergeni
-                     </Button>
-                  }
+                  isAllergenLegend
                />
             </div>
          </div>

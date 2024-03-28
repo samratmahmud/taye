@@ -2,14 +2,14 @@
 import React from "react";
 
 export interface ArticleCardProps {
-   titles: string;
+   title: string;
    price: string;
    describtion: string;
    icons?: string[];
 }
 
 function ArticleCard(props: ArticleCardProps) {
-   const {titles, price, describtion, icons} = props;
+   const {title, price, describtion, icons} = props;
 
    return (
       <div className="group">
@@ -18,7 +18,7 @@ function ArticleCard(props: ArticleCardProps) {
                className="text-xl inline font-medium text-primary-400 leading-[1.42em] flex-shrink-0 relative z-10"
                dangerouslySetInnerHTML={{
                   __html: `<div style="background: #0B1315; display: inline;">${insertLineBreakAfterSlash(
-                     titles
+                     title
                   )}</div> `,
                }}
             />

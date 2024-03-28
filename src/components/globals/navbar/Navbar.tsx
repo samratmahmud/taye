@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, {useState} from "react";
 import Navlink from "./Navlink";
 import NavButton from "./NavButton";
+import useNavbarEffect from "@/hooks/useNavbarEffect";
 
 const pages = [
    {
@@ -29,8 +30,10 @@ function Navbar() {
    const toggle = () => setOpen((prev) => !prev);
    const [tab, setTab] = useState(0);
 
+   const nav = useNavbarEffect("", "md:bg-transparent bg-gray-950/60", 300);
+
    return (
-      <nav className={`fixed left-0 right-0 z-[1080] duration-300 py-7`}>
+      <nav className={`fixed left-0 right-0 z-[1080] duration-300 py-7 ${nav}`}>
          <div className="container">
             <div className="flex md:items-center justify-between px-3">
                <Link href="/">
