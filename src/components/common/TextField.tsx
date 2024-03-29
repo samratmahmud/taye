@@ -15,7 +15,7 @@ function TextField(props: TextFieldProps) {
    return (
       <div
          className={`flex items-center justify-between gap-2 border duration-200 rounded-md cursor-pointer max-h-[62px] relative ${
-            error ? "border-red-500" : !focus ? "border-primary-400" : "border-primary-600" // Modify border color based on error
+            error ? "border-red-500" : !focus ? "border-primary-400" : "border-primary-600"
          }`}
          tabIndex={0}
          onFocus={() => setFocus(true)}

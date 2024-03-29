@@ -91,16 +91,11 @@ function Contact() {
                            </h2>
                            <div>
                               {items.map(({name, value}, index) => (
-                                 <div
-                                    key={index}
-                                    className="flex justify-between gap-3"
-                                 >
+                                 <div key={index} className="flex justify-between gap-3">
                                     <h3 className="text-4xl font-light  leading-[1.4em] mb-[1px] md:mb-0">
                                        {name}
                                     </h3>
-                                    <p className="font-normal text-4xl  leading-[1.4em]">
-                                       {value}
-                                    </p>
+                                    <p className="font-normal text-4xl  leading-[1.4em]">{value}</p>
                                  </div>
                               ))}
                            </div>

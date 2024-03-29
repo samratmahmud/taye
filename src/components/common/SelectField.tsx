@@ -3,24 +3,30 @@
 import React, {Fragment, useState} from "react";
 import {Listbox, Transition} from "@headlessui/react";
 
-interface SelectFieldProps
-   extends React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> {
+interface SelectFieldProps {
+   type?: string;
+   className?: string;
    label?: string;
    icon?: string;
    options: string[];
+   value: string;
+   onChange?: (value: string) => void;
+   error?: string | null;
 }
 
 function SelectField(props: SelectFieldProps) {
-   const {label, className, options, type, icon, ...rest} = props;
+   const {label, className, options, type, icon, value, onChange, error} = props;
 
-   const [selected, setSelected] = useState(options[0]);
+   const [focus, setFocus] = useState(false);
 
    return (
       <Listbox
-         value={selected}
+         value={value}
          as="div"
          className={`flex flex-col gap-1 ${className}`}
-         onChange={(value) => setSelected(value)}
+         onChange={onChange}
+         onFocus={() => setFocus(true)}
+         onBlur={() => setFocus(false)}
       >
          {({open}) => (
             <>
@@ -37,14 +43,26 @@ function SelectField(props: SelectFieldProps) {
                   <Listbox.Button as={Fragment}>
                      <div
                         role="button"
-                        className="w-full placeholder:font-normal leading-[1.44em] border border-primary-400 focus:border-primary-600 duration-200 rounded-md py-[18px] px-5 flex gap-2 items-center justify-between"
+                        className={`w-full placeholder:font-normal leading-[1.44em] border duration-200 rounded-md py-[18px] px-5 flex gap-2 items-center justify-between ${
+                           error
+                              ? "border-red-500"
+                              : focus
+                              ? "border-primary-600"
+                              : "border-primary-400"
+                        }`}
                         tabIndex={0}
                      >
                         <img src={icon} alt="" />
-                        <span>{selected}</span>
+                        <span>{value}</span>
                         <img className={`duration-200`} src="/images/freccia data.svg" alt="" />
                      </div>
                   </Listbox.Button>
+
+                  {error && (
+                     <div className="absolute -bottom-5 font-semibold left-0 text-xs text-red-500">
+                        {error}
+                     </div>
+                  )}
 
                   <Transition
                      enter="transition duration-100 ease-out"
