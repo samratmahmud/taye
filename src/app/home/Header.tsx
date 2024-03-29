@@ -25,13 +25,24 @@ function Header(props: titlesProps) {
             }}
          />
          <div className="container relative z-10 md:pt-64 md:pb-[400px] py-80">
-            <div className="text-9xl font-bitter-rose text-primary-400 text-center mb-1.5 leading-[1.05em]">
+            <div
+               data-aos="fade-up"
+               className="text-9xl font-bitter-rose text-primary-400 text-center mb-1.5 leading-[1.05em]"
+            >
                {title}
             </div>
-            <h1 className="text-10xl font-syncopate font-bold uppercase text-center leading-[0.81em] md:mb-3 mb-2">
+            <h1
+               data-aos="fade-up"
+               data-aos-delay="150"
+               className="text-10xl font-syncopate font-bold uppercase text-center leading-[0.81em] md:mb-3 mb-2"
+            >
                tayè
             </h1>
-            <p className="text-sm font-bold font-syncopate text-center leading-[1.08em]">
+            <p
+               data-aos="fade-up"
+               data-aos-delay="300"
+               className="text-sm font-bold font-syncopate text-center leading-[1.08em]"
+            >
                WINES - DRINK - FOOD
             </p>
          </div>

@@ -30,17 +30,25 @@ function Navbar() {
    const toggle = () => setOpen((prev) => !prev);
    const [tab, setTab] = useState(0);
 
-   const nav = useNavbarEffect("", "md:bg-transparent bg-gray-950/60", 300);
+   const nav = useNavbarEffect(
+      "",
+      "md:bg-transparent bg-gray-950/60 backdrop-blur-sm",
+      300
+   );
 
    return (
       <nav className={`fixed left-0 right-0 z-[1080] duration-300 py-7 ${nav}`}>
          <div className="container">
             <div className="flex md:items-center justify-between px-3">
                <Link href="/">
-                  <img className="md:w-auto w-12" src="/images/logo in alto sx.svg" alt="" />
+                  <img
+                     className="md:w-auto w-12"
+                     src="/images/logo in alto sx.svg"
+                     alt=""
+                  />
                </Link>
                <div
-                  className={`hidden md:block border-2 border-primary-400 rounded-full duration-300 pl-9 pr-4 bg-gray-950/60 w-max mx-auto py-3.5`}
+                  className={`hidden md:block border-2 border-primary-400 rounded-full duration-300 pl-9 pr-4 bg-gray-950/60 w-max mx-auto py-3.5 backdrop-blur-sm overflow-hidden`}
                >
                   <Navlink pages={pages} />
                </div>
@@ -51,10 +59,12 @@ function Navbar() {
             <div className="md:hidden">
                <div
                   className={`fixed z-[1040] duration-500 inset-0 ${
-                     open ? "translate-x-0 ease-in" : "-translate-x-[calc(100%+24px)] ease-out"
+                     open
+                        ? "translate-x-0 ease-in"
+                        : "-translate-x-[calc(100%+24px)] ease-out"
                   }`}
                >
-                  <div className="bg-black h-full w-screen p-8 overflow-y-auto">
+                  <div className="bg-black h-screen w-screen p-8 overflow-y-auto">
                      <div className="flex items-center gap-5 justify-between mb-[136px]">
                         <Link href="/">
                            <img src="/images/logo in alto sx (1).svg" alt="" />
@@ -71,7 +81,9 @@ function Navbar() {
                                  key={index}
                                  onClick={() => setTab(index)}
                                  className={`text-[24px] font-medium  duration-300 hover:no-underline leading-[1.42em] py-1.5 ${
-                                    tab === index ? "text-white" : "text-white/70"
+                                    tab === index
+                                       ? "text-white"
+                                       : "text-white/70"
                                  }`}
                               >
                                  {title}

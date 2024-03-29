@@ -7,7 +7,8 @@ const menus = [
    {
       title: "TAYÈRE DEL CONTADINO",
       price: "€18",
-      describtion: "Selezione di salumi, formaggi locali, olive, e marmellata artigianale.",
+      describtion:
+         "Selezione di salumi, formaggi locali, olive, e marmellata artigianale.",
       iconG: [
          "/images/Group 143.svg",
          "/images/path402.svg",
@@ -18,13 +19,15 @@ const menus = [
    {
       title: "TAYÈRE DEL MARE",
       price: "€26",
-      describtion: "Selezione di salmone affumicato, gamberi, calamari, acciughe.",
+      describtion:
+         "Selezione di salmone affumicato, gamberi, calamari, acciughe.",
       iconG: ["/images/Group 143.svg"],
    },
    {
       title: "TAYÈRE MEDITERRANEO",
       price: "€22",
-      describtion: "Prosciutto crudo, mozzarella di bufala, pomodorini, olive, pesto.",
+      describtion:
+         "Prosciutto crudo, mozzarella di bufala, pomodorini, olive, pesto.",
    },
    {
       title: "TAYÈRE VEGANO",
@@ -47,13 +50,18 @@ function GiveMenu() {
    return (
       <section>
          <div className="container xl:mb-[100px] lg:mb-20 md:mb-16 mb-11">
-            <div className="lg:mb-[60px] mb-10">
+            <div data-aos="fade-up" className="lg:mb-[60px] mb-10">
                <Titles title="Dal nostro menu" />
             </div>
             <div className="max-w-[1200px] mx-auto">
                <div className="grid lg:grid-cols-2 xl:gap-x-36 gap-x-16 lg:gap-y-10 gap-y-5 lg:mb-[60px] mb-10">
                   {menus.map(({title, price, describtion, iconG}, index) => (
-                     <div key={index} className="group">
+                     <div
+                        data-aos="fade-up"
+                        data-aos-delay={index * 200}
+                        key={index}
+                        className="group"
+                     >
                         <div className="flex gap-2.5 items-center mb-1 lg:mb-0">
                            <h3 className="text-xl font-medium text-primary-400 leading-[1.42em] lg:flex-shrink-0">
                               {title}
@@ -66,7 +74,9 @@ function GiveMenu() {
                               {price}
                            </p>
                         </div>
-                        <p className="max-w-[465px] leading-[1.41em] mb-1 lg:mb-0">{describtion}</p>
+                        <p className="max-w-[465px] leading-[1.41em] mb-1 lg:mb-0">
+                           {describtion}
+                        </p>
                         <div
                            className={`flex items-center ${
                               iconG ? "justify-between" : "justify-end"
@@ -91,7 +101,11 @@ function GiveMenu() {
                      </div>
                   ))}
                </div>
-               <div className="flex justify-center">
+               <div
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  className="flex justify-center"
+               >
                   <Button path="/" icon="/images/Group 201.svg">
                      Scopri
                   </Button>

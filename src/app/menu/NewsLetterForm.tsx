@@ -59,30 +59,47 @@ function NewsLetterForm() {
 
    return (
       <form onSubmit={handleSubmit} className="w-full">
-         <div className="text-5xl font-normal leading-[1.05em] text-primary-400 font-bitter-rose text-center">
+         <div
+            data-aos="fade-up"
+            className="text-5xl font-normal leading-[1.05em] text-primary-400 font-bitter-rose text-center"
+         >
             Registrati alla
          </div>
-         <h2 className="text-7xl tracking-normal font-normal leading-[1.4em] text-center mb-4">
+         <h2
+            data-aos="fade-up"
+            data-aos-delay="150"
+            className="text-7xl tracking-normal font-normal leading-[1.4em] text-center mb-4"
+         >
             Newsletter
          </h2>
          <div className="flex flex-col gap-[18px] lg:max-w-[330px] mx-auto md:mb-7 mb-5">
-            <TextField
-               type="text"
-               placeholder="nome*"
-               value={name}
-               onChange={(e) => setName(e.target.value)}
-               error={nameError}
-            />
-            <TextField
-               type="email"
-               placeholder="Email*"
-               value={email}
-               onChange={(e) => setEmail(e.target.value)}
-               error={emailError}
-            />
-            <TextField type="number" placeholder="Telefono (consigliato)" />
+            <div data-aos="fade-up" data-aos-delay="300">
+               <TextField
+                  type="text"
+                  placeholder="nome*"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  error={nameError}
+               />
+            </div>
+            <div data-aos="fade-up" data-aos-delay="450">
+               <TextField
+                  type="email"
+                  placeholder="Email*"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  error={emailError}
+               />
+            </div>
+            <div data-aos="fade-up" data-aos-delay="600">
+               <TextField type="number" placeholder="Telefono (consigliato)" />
+            </div>
          </div>
-         <div className="flex items-center justify-center gap-2.5 mb-6">
+         <div
+            data-aos="fade-up"
+            data-aos-delay="750"
+            className="flex items-center justify-center gap-2.5 mb-6"
+         >
             <input
                className="w-4 h-4 cursor-pointer"
                type="checkbox"
@@ -90,11 +107,18 @@ function NewsLetterForm() {
                onChange={() => setIsChecked(!isChecked)}
             />
             <div className="text-base md:text-xs font-normal leading-[1.42em]">
-               Inviando questa richiesta si accetta la nostra <Link href="/">privacy policy</Link>
-               {checkboxError && <p className="text-red-500">{checkboxError}</p>}
+               Inviando questa richiesta si accetta la nostra{" "}
+               <Link href="/">privacy policy</Link>
+               {checkboxError && (
+                  <p className="text-red-500">{checkboxError}</p>
+               )}
             </div>
          </div>
-         <div className="flex justify-center">
+         <div
+            data-aos="fade-up"
+            data-aos-delay="750"
+            className="flex justify-center"
+         >
             <Button type="submit" as="button" icon="/images/Group 201.svg">
                Iscriviti
             </Button>

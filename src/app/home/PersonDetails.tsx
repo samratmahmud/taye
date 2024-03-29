@@ -40,7 +40,7 @@ function PersonDetails() {
       <section>
          <div className="container xl:mb-52 lg:mb-44 md:mb-36 sm:mb-32 mb-[104px]">
             <div className="flex gap-10 justify-between items-center">
-               <div className="hidden lg:block">
+               <div data-aos="fade-right" className="hidden lg:block">
                   <img src="/images/Group 200.jpg" alt="" />
                </div>
                <Slider
@@ -52,13 +52,24 @@ function PersonDetails() {
                         <div className="text-11xl text-primary-400 font-semibold leading-[0.95em] text-center md:mb-2.5">
                            ”
                         </div>
-                        <p className="text-4xl text-center leading-[1.4em] lg:mb-10 md:mb-8 mb-6">
+                        <p
+                           data-aos="fade-up"
+                           className="text-4xl text-center leading-[1.4em] lg:mb-10 md:mb-8 mb-6"
+                        >
                            {content}
                         </p>
-                        <p className="text-2xl font-normal text-primary-400 text-center uppercase leading-[1.4em]">
+                        <p
+                           data-aos="fade-up"
+                           data-aos-delay="150"
+                           className="text-2xl font-normal text-primary-400 text-center uppercase leading-[1.4em]"
+                        >
                            {name}
                         </p>
-                        <p className="text-2xl font-normal text-center leading-[1.4em]">
+                        <p
+                           data-aos="fade-up"
+                           data-aos-delay="300"
+                           className="text-2xl font-normal text-center leading-[1.4em]"
+                        >
                            {title}
                         </p>
                      </div>

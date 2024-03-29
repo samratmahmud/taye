@@ -58,7 +58,10 @@ function OurPhilosophy() {
             >
                {philosophys.map(({title, describtion}, index) => (
                   <div key={index} className="my-1">
-                     <div className="flex items-center justify-center lg:gap-5 md:gap-3 gap-1.5">
+                     <div
+                        data-aos="fade-up"
+                        className="flex items-center justify-center lg:gap-5 md:gap-3 gap-1.5"
+                     >
                         <img
                            className="lg:w-[30px] md:w-6 w-5"
                            src="/images/forma sinistra.svg"
@@ -73,7 +76,11 @@ function OurPhilosophy() {
                            alt=""
                         />
                      </div>
-                     <p className="text-4xl leading-[1.4em] text-center lg:px-0.5 md:px-1 px-2">
+                     <p
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                        className="text-4xl leading-[1.4em] text-center lg:px-0.5 md:px-1 px-2"
+                     >
                         {describtion}
                      </p>
                   </div>

@@ -30,7 +30,7 @@ function OurOffer() {
    return (
       <section>
          <div className="xl:mb-44 lg:mb-36 md:mb-24 sm:mb-20 mb-11">
-            <div className="mb-11">
+            <div data-aos="fade-up" className="mb-11">
                <Titles title="Le nostre offerte." />
             </div>
             <div className="grid xl:grid-cols-4 md:grid-cols-2">
@@ -38,6 +38,8 @@ function OurOffer() {
                   <Link
                      href="/"
                      key={index}
+                     data-aos="flip-right"
+                     data-aos-delay={index * 200}
                      className="lg:min-h-[670px] sm:min-h-[400px] min-h-[134px] bg-cover bg-center relative z-0"
                      style={{backgroundImage: `url('${thumb}')`}}
                   >
@@ -52,7 +54,9 @@ function OurOffer() {
                            <h2 className="text-12xl font-normal text-primary-400 font-bitter-rose text-center">
                               {title}
                            </h2>
-                           <p className="2xl:text-3xl sm:text-[25px] text-base">{describtion}</p>
+                           <p className="2xl:text-3xl sm:text-[25px] text-base">
+                              {describtion}
+                           </p>
                         </div>
                      </div>
                   </Link>
