@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import ArticleCard, {ArticleCardProps} from "./ArticleCard";
 import Button from "@/components/common/Button";
+import SmoothCollapse from "react-smooth-collapse";
+
 export interface CategoryProps {
    thambnail: string;
    thambnailM?: string;
@@ -14,18 +16,24 @@ export interface CategoryProps {
 function Category(props: CategoryProps) {
    const {thambnail, thambnailM, title, articles, isAllergenLegend} = props;
 
-   const [articlesPreview, setArticlesPreview] = useState<ArticleCardProps[]>([]);
    const [showAll, setShowAll] = useState(false);
    const toggleShowAll = () => setShowAll((prev) => !prev);
 
-   let articlesA;
-   let articlesB;
+   let articlesA, articlesB, articlesAC, articlesBD;
+   let firstTenArticles = articles.slice(0, 12);
+   let lastAllArticles = articles.slice(12);
+   articlesA = firstTenArticles;
 
-   if (articles.length > 5) {
-      articlesA = articles.slice(0, Math.abs(articles.length / 2) + 2);
-      articlesB = articles.slice(Math.abs(articles.length / 2) + 2);
-   } else {
-      articlesA = articles;
+   if (firstTenArticles.length > 6) {
+      const calcCenter = Math.abs(firstTenArticles.length / 2);
+      articlesA = firstTenArticles.slice(0, calcCenter + 2);
+      articlesB = firstTenArticles.slice(calcCenter + 2);
+   }
+
+   if (lastAllArticles.length > 0) {
+      const calcCenter = Math.abs(lastAllArticles.length / 2);
+      articlesAC = lastAllArticles.slice(0, calcCenter);
+      articlesBD = lastAllArticles.slice(calcCenter);
    }
 
    return (
@@ -47,6 +55,21 @@ function Category(props: CategoryProps) {
                         icons={icons}
                      />
                   ))}
+                  {articlesAC && articlesAC?.length > 0 && (
+                     <SmoothCollapse expanded={showAll}>
+                        <div className="flex flex-col lg:gap-[41px] md:gap-8 gap-5">
+                           {articlesAC.map(({title, price, describtion, icons}, index) => (
+                              <ArticleCard
+                                 key={index}
+                                 title={title}
+                                 price={price}
+                                 describtion={describtion}
+                                 icons={icons}
+                              />
+                           ))}
+                        </div>
+                     </SmoothCollapse>
+                  )}
                </div>
             </div>
             <div className={`lg:w-[50%] w-full ${articlesB ? "flex flex-col gap-20" : ""}`}>
@@ -86,6 +109,21 @@ function Category(props: CategoryProps) {
                            icons={icons}
                         />
                      ))}
+                     {articlesBD && articlesBD?.length > 0 && (
+                        <SmoothCollapse expanded={showAll}>
+                           <div className="flex flex-col gap-10">
+                              {articlesBD.map(({title, price, describtion, icons}, index) => (
+                                 <ArticleCard
+                                    key={index}
+                                    title={title}
+                                    price={price}
+                                    describtion={describtion}
+                                    icons={icons}
+                                 />
+                              ))}
+                           </div>
+                        </SmoothCollapse>
+                     )}
                   </div>
                )}
             </div>
@@ -97,10 +135,10 @@ function Category(props: CategoryProps) {
                </Button>
             </div>
          )}
-         {!isAllergenLegend && articles.length > 10 && (
+         {!isAllergenLegend && articles.length > 12 && (
             <div className="flex justify-center">
-               <Button as="button" icon="/images/Group 206.svg">
-                  Mostra altro
+               <Button onClick={toggleShowAll} as="button" icon="/images/Group 206.svg">
+                  Mostra {showAll ? "meno" : "altro"}
                </Button>
             </div>
          )}
@@ -116,6 +154,21 @@ function Category(props: CategoryProps) {
                         icons={icons}
                      />
                   ))}
+                  {articlesBD && articlesBD?.length > 0 && (
+                     <SmoothCollapse expanded={showAll}>
+                        <div className="flex flex-col gap-10">
+                           {articlesBD.map(({title, price, describtion, icons}, index) => (
+                              <ArticleCard
+                                 key={index}
+                                 title={title}
+                                 price={price}
+                                 describtion={describtion}
+                                 icons={icons}
+                              />
+                           ))}
+                        </div>
+                     </SmoothCollapse>
+                  )}
                </div>
             )}
          </div>

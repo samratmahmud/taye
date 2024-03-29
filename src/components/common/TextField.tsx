@@ -5,16 +5,17 @@ import React, {useState} from "react";
 interface TextFieldProps extends React.InputHTMLAttributes<HTMLInputElement> {
    startIcon?: string;
    arrow?: boolean;
+   error?: string | null;
 }
 
 function TextField(props: TextFieldProps) {
-   const {startIcon, arrow, ...rest} = props;
-   const [focus, setFocus] = React.useState(false);
+   const {startIcon, arrow, error, ...rest} = props;
+   const [focus, setFocus] = useState(false);
 
    return (
       <div
          className={`flex items-center justify-between gap-2 border duration-200 rounded-md cursor-pointer max-h-[62px] relative ${
-            !focus ? "border-primary-400" : "border-primary-600"
+            error ? "border-red-500" : !focus ? "border-primary-400" : "border-primary-600" // Modify border color based on error
          }`}
          tabIndex={0}
          onFocus={() => setFocus(true)}
@@ -33,6 +34,11 @@ function TextField(props: TextFieldProps) {
                src="/images/freccia data.svg"
                alt=""
             />
+         )}
+         {error && (
+            <div className="absolute -bottom-[18px] left-0 text-xs font-semibold text-red-500">
+               {error}
+            </div>
          )}
       </div>
    );

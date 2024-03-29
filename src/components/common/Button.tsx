@@ -1,12 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import React, {ReactNode} from "react";
+import React, {ButtonHTMLAttributes, ReactNode} from "react";
 
-export interface ButtonProps
-   extends React.DetailedHTMLProps<
-      React.HTMLAttributes<HTMLParagraphElement>,
-      HTMLParagraphElement
-   > {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
    path?: string;
    icon?: string;
    children?: ReactNode;
@@ -14,7 +10,7 @@ export interface ButtonProps
 }
 
 function Button(props: ButtonProps) {
-   const {children, path, icon, as} = props;
+   const {children, path, icon, as, ...rest} = props;
 
    const Element = as || Link;
 
@@ -22,6 +18,7 @@ function Button(props: ButtonProps) {
       // @ts-ignore
       <Element
          {...(path ? {href: path} : {})}
+         {...rest}
          className="flex gap-1 hover:gap-2.5 duration-300 items-center  hover:no-underline"
       >
          <p className="text-md font-normal">{children}</p>

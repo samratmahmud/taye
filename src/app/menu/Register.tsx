@@ -1,39 +1,17 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 import Button from "@/components/common/Button";
 import TextField from "@/components/common/TextField";
 import Link from "next/link";
 import React from "react";
+import NewsLetterForm from "./NewsLetterForm";
 
 function Register() {
    return (
       <section>
          <div className="container">
             <div className="grid lg:grid-cols-2 items-center gap-6 mb-5 xl:mb-0">
-               <div className="w-full">
-                  <div className="text-5xl font-normal leading-[1.05em] text-primary-400 font-bitter-rose text-center">
-                     Registrati alla
-                  </div>
-                  <h2 className="text-7xl tracking-normal font-normal leading-[1.4em] text-center mb-4">
-                     Newsletter
-                  </h2>
-                  <div className="flex flex-col gap-[18px] lg:max-w-[330px] mx-auto md:mb-7 mb-5">
-                     <TextField type="text" placeholder="nome*" />
-                     <TextField type="email" placeholder="Email*" />
-                     <TextField type="number" placeholder="Telefono (consigliato)" />
-                  </div>
-                  <div className="flex items-center justify-center gap-2.5 mb-6">
-                     <input className="w-4 h-4 cursor-pointer" type="checkbox" />
-                     <div className="text-base md:text-xs font-normal leading-[1.42em]">
-                        Inviando questa richiesta si accetta la nostra{" "}
-                        <Link href="/">privacy policy</Link>
-                     </div>
-                  </div>
-                  <div className="flex justify-center">
-                     <Button as="button" icon="/images/Group 201.svg">
-                        Iscriviti
-                     </Button>
-                  </div>
-               </div>
+               <NewsLetterForm />
                <div className="relative lg:block hidden">
                   <div className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                      <h1 className="text-10xl font-syncopate font-bold uppercase text-center leading-[0.81em] mb-3">

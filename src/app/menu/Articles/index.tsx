@@ -103,6 +103,46 @@ function Articles() {
                         price: "€25",
                         describtion: "Piemonte, Italia",
                      },
+                     {
+                        title: "Chardonnay Langhe DOC / CERETTO, 2018",
+                        price: "€15",
+                        describtion: "Piemonte, Italia",
+                     },
+                     {
+                        title: "BARBERA D’ALBA SUPERIORE / MARCHESI DI BAROLO, 2016",
+                        price: "€18",
+                        describtion: "Piemonte, Italia",
+                     },
+                     {
+                        title: "GAVI DI GAVI / LA SCOLCA, 2019",
+                        price: "€20",
+                        describtion: "Piemonte, Italia",
+                     },
+                     {
+                        title: "NEBBIOLO DELLE LANGHE / BARBARESCO, 2015",
+                        price: "€25",
+                        describtion: "Piemonte, Italia",
+                     },
+                     {
+                        title: "Chardonnay Langhe DOC / CERETTO",
+                        price: "€15",
+                        describtion: "Piemonte, Italia",
+                     },
+                     {
+                        title: "BARBERA D’ALBA SUPERIORE / MARCHESI DI BAROLO",
+                        price: "€18",
+                        describtion: "Piemonte, Italia",
+                     },
+                     {
+                        title: "GAVI DI GAVI / LA SCOLCA, 2019",
+                        price: "€15",
+                        describtion: "Piemonte, Italia",
+                     },
+                     {
+                        title: "NEBBIOLO DELLE LANGHE / BARBARESCO, 2015",
+                        price: "€25",
+                        describtion: "Piemonte, Italia",
+                     },
                   ]}
                />
 
