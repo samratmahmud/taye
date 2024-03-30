@@ -91,13 +91,7 @@ function Prenotation() {
       setTimeError(validateTime(time));
 
       // If valid, proceed with submission...
-      if (
-         !nameError &&
-         !emailError &&
-         !phoneError &&
-         !dateError &&
-         !timeError
-      ) {
+      if (!nameError && !emailError && !phoneError && !dateError && !timeError) {
          // Your submission logic here
          console.log("Form submitted with valid data!");
       }
@@ -116,11 +110,7 @@ function Prenotation() {
                >
                   Il tuo tavolo
                </h3>
-               <div
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  className="lg:mb-[50px] md:mb-9 mb-7"
-               >
+               <div data-aos="fade-up" data-aos-delay="200" className="lg:mb-[50px] md:mb-9 mb-7">
                   <Titles title="Prenotation." />
                </div>
                <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-x-[38px] md:gap-y-6 gap-y-4 mb-5">
@@ -205,25 +195,13 @@ function Prenotation() {
                   data-aos-delay="1100"
                   className="flex items-center gap-4 justify-center xl:mb-14 lg:mb-12 md:mb-9 sm:mb-7 mb-5"
                >
-                  <input
-                     className="w-4 h-4 cursor-pointer"
-                     type="checkbox"
-                     id="checkbox"
-                  />
+                  <input className="w-4 h-4 cursor-pointer" type="checkbox" id="checkbox" />
                   <p className="text-base font-normal leading-[1.42em]">
                      Iscriviti alla newsletter
                   </p>
                </div>
-               <div
-                  data-aos="fade-up"
-                  data-aos-delay="1100"
-                  className="flex justify-center"
-               >
-                  <Button
-                     as="button"
-                     type="submit"
-                     icon="/images/Group 201.svg"
-                  >
+               <div data-aos="fade-up" data-aos-delay="1100" className="flex justify-center">
+                  <Button as="button" type="submit" icon="/images/Group 201.svg">
                      Prenota
                   </Button>
                </div>

@@ -1,1 +1,0 @@
-Name is required and should allow only letters and spaces, email is required and should be a valid address, date is required and only today & future dates should be selectable, time is required. In case of error, add a bordeaux outline around the field and add a short message below each one
